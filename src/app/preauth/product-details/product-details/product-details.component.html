@@ -1,0 +1,57 @@
+ <!-- Page Content-->
+    <!-- Custom page title-->
+    <div class="page-title-overlap bg-dark pt-4">
+        <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+          <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+            <app-breadcrumb></app-breadcrumb>
+          </div>
+          <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
+            <h1 class="h3 text-light mb-2">Smartwatch Youth Edition</h1>
+            <div>
+              <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
+              </div><span class="d-inline-block font-size-sm text-white opacity-70 align-middle mt-1 ml-1">74 Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bg-light box-shadow-lg rounded-lg">
+          <!-- Tabs-->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link p-4 active" href="#general" data-toggle="tab" role="tab">General Info</a></li>
+            <li class="nav-item"><a class="nav-link p-4" href="#specs" data-toggle="tab" role="tab">Tech Specs</a></li>
+            <li class="nav-item"><a class="nav-link p-4" href="#reviews" data-toggle="tab" role="tab">Reviews <span class="font-size-sm opacity-60">(74)</span></a></li>
+          </ul>
+          <div class="px-4 pt-lg-3 pb-3 mb-5">
+            <div class="tab-content px-lg-3">
+              <!-- General info tab-->
+              <div class="tab-pane fade show active" id="general" role="tabpanel">
+               <app-generalinfo-tab></app-generalinfo-tab>
+              </div>
+              <!-- Tech specs tab-->
+              <div class="tab-pane fade" id="specs" role="tabpanel">
+                <app-techspecs-tab></app-techspecs-tab>
+              </div>
+              <!-- Reviews tab-->
+              <div class="tab-pane fade" id="reviews" role="tabpanel">
+                <app-reviews-tab></app-reviews-tab>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product description-->
+      <div class="container pt-lg-3 pb-4 pb-sm-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 pb-2">Choose your style</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p><img src="../../../../assets/img/shop/single/prod-img2.jpg" alt="Product description">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+          </div>
+        </div>
+      </div>
+      <hr class="pb-5">
+      <!-- Product carousel (You may also like)-->
+      <app-product-carousel></app-product-carousel>
+      <!-- Product bundles carousel (Cheaper together)-->
+      <app-product-bundle></app-product-bundle>

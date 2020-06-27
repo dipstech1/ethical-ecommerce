@@ -1,0 +1,51 @@
+<!-- Page Content-->
+    <!-- Hero (Banners + Slider)-->
+    <app-banner-slider></app-banner-slider>
+    <!-- Products grid (Trending products)-->
+    <app-trending-product [trendingProduct] = "trendingProduct"></app-trending-product>
+    <!-- Promo banner-->
+   <app-promo-banner></app-promo-banner>
+    <!-- Brands carousel-->
+    <section class="container mb-5">
+      <div class="cz-carousel border-right">
+        <div class="cz-carousel-inner" data-carousel-options="{ &quot;nav&quot;: false, &quot;controls&quot;: false, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 4000, &quot;loop&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;360&quot;:{&quot;items&quot;:2},&quot;600&quot;:{&quot;items&quot;:3},&quot;991&quot;:{&quot;items&quot;:4},&quot;1200&quot;:{&quot;items&quot;:4}} }">
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/13.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/14.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/17.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/16.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/15.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/18.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/19.png" style="width: 165px;" alt="Brand"></a></div>
+          <div><a class="d-block bg-white border py-4 py-sm-5 px-2" href="#" style="margin-right: -.0625rem;"><img class="d-block mx-auto" src="../../../../assets/img/shop/brands/20.png" style="width: 165px;" alt="Brand"></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Product widgets-->
+    <app-widgets></app-widgets>
+    <!-- YouTube feed-->
+    <app-youtube-feed></app-youtube-feed>
+    <!-- Blog + Instagram info cards-->
+    <section class="container-fluid px-0">
+      <div class="row no-gutters">
+        <div class="col-md-6"><a class="card border-0 rounded-0 text-decoration-none py-md-4 bg-faded-primary" href="blog-list-sidebar.html">
+            <div class="card-body text-center"><i class="czi-edit h3 mt-2 mb-4 text-primary"></i>
+              <h3 class="h5 mb-1">Read the blog</h3>
+              <p class="text-muted font-size-sm">Latest store, fashion news and trends</p>
+            </div></a></div>
+        <div class="col-md-6"><a class="card border-0 rounded-0 text-decoration-none py-md-4 bg-faded-accent" href="#">
+            <div class="card-body text-center"><i class="czi-instagram h3 mt-2 mb-4 text-accent"></i>
+              <h3 class="h5 mb-1">Follow on Instagram</h3>
+              <p class="text-muted font-size-sm">#ShopWithEthical</p>
+            </div></a></div>
+      </div>
+    </section>
+    <!-- Toast: Added to Cart-->
+    <div class="toast-container toast-bottom-center">
+      <div class="toast mb-3" id="cart-toast" data-delay="5000" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-success text-white"><i class="czi-check-circle mr-2"></i>
+          <h6 class="font-size-sm text-white mb-0 mr-auto">Added to cart!</h6>
+          <button class="close text-white ml-2 mb-1" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="toast-body">This item has been added to your cart.</div>
+      </div>
+    </div>

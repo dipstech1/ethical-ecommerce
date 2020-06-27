@@ -1,0 +1,123 @@
+{
+    "departments": [
+        {
+            "name": "Computer and Accessories",
+            "subDepartment": [
+                {
+                    "name": "Computers",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widget-name": "Desktop Computers"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Computer Internal Components"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Computer External Components"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Networking Products (NAS)"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Single Board Computers"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accessories",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widget-name": "Desktop Accessoriess"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessories Internal Components"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessories External Components"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Networking Products (NAS)"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Single Board Accessoriess"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Smart Phone and Tablets",
+            "subDepartment": [
+                {
+                    "name": "Smartphones",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widget-name": "Apple iPhone"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Android Smartphones"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Phablets"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tablets",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widget-name": ">Apple iPad"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Android Tablets"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Tablets with Keyboard"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accessories",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widget-name": ">Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widget-name": "Accessory Kits"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

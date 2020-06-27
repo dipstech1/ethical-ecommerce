@@ -1,0 +1,350 @@
+{
+    "trending_products":[
+        {
+            "id":1,
+            "productType":"Monitor",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"../../../../../../assets/img/shop/catalog/76.jpg",
+            "status":""
+        },
+        {
+            "id":2,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":3,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":4,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":5,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":6,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":7,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        },
+        {
+            "id":8,
+            "productType":"Laptop",
+            "description":"Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+            "color":["red","blue"],
+            "rating":5,
+            "price":{
+                "oldprice":200,
+                "newprice":400
+            },
+            "product_info":{
+                "general":{
+             "model":"",
+             "gender":"",
+             "os_compatibility":""
+            },
+            "physical_specs":{
+            "shape":"",
+            "body_material":"",
+            "band_material":""
+            }
+            },
+            "quantity":40,
+            "addtocart":true,
+            "adtowishlist":true,
+            "product_image_url":"",
+            "status":""
+        }
+        
+    ],
+    "departments": [
+        {
+            "name": "Computer and Accessories",
+            "subDepartment": [
+                {
+                    "name": "Computers",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widgetName": "Desktop Computers"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Computer Internal Components"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Computer External Components"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Networking Products (NAS)"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Single Board Computers"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accessories",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widgetName": "Desktop Accessoriess"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessories Internal Components"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessories External Components"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Networking Products (NAS)"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Single Board Accessoriess"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Smart Phone and Tablets",
+            "subDepartment": [
+                {
+                    "name": "Smartphones",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widgetName": "Apple iPhone"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Android Smartphones"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Phablets"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tablets",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widgetName": ">Apple iPad"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Android Tablets"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Tablets with Keyboard"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accessories",
+                    "widgets": [
+                        {
+                            "id": "1",
+                            "widgetName": ">Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessory Kits"
+                        },
+                        {
+                            "id": "1",
+                            "widgetName": "Accessory Kits"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstname": "abc",
+            "lastname": "sss",
+            "emailaddress": "sss",
+            "phoneno": "093333333",
+            "password": "",
+            "confirmpassword": "",
+            "is-subscribed": true,
+            "image": ""
+        },
+        {
+            "id": 2,
+            "firstname": "abc",
+            "lastname": "sss",
+            "emailaddress": "sss",
+            "phoneno": "093333333",
+            "password": "",
+            "confirmpassword": "",
+            "is-subscribed": true,
+            "image": ""
+        },
+        {
+            "id": 3,
+            "firstname": "abc",
+            "lastname": "sss",
+            "emailaddress": "sss",
+            "phoneno": "093333333",
+            "password": "",
+            "confirmpassword": "",
+            "is-subscribed": true,
+            "image": ""
+        }
+    ]
+}
