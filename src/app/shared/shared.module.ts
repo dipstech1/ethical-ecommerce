@@ -21,20 +21,20 @@ import { FooterSitemapComponent } from './partial-views/footer-sitemap/footer-si
 import { WidgetsComponent } from './components/widgets/widgets.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { CartManagementComponent } from './partial-views/cart-management/cart-management.component';
-import { StarRatingComponent } from './components/star-rating/star-rating.component';
-
-
+import { StarRatingsComponent } from './components/star-rating/star-rating.component';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
-  declarations: [ LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingComponent, ],
+  declarations: [ LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ],
   entryComponents:[ConfirmPopupComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
+    RatingModule
   ],
   exports : [LoaderComponent,ConfirmPopupComponent,ReactiveFormsModule,FormsModule,HeaderComponent,
-    FooterComponent,WidgetsComponent,BreadcrumbComponent, CartManagementComponent,StarRatingComponent]
+    FooterComponent,WidgetsComponent,BreadcrumbComponent, CartManagementComponent,StarRatingsComponent]
 })
 export class SharedModule { }
