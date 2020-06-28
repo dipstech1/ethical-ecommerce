@@ -11,6 +11,7 @@ import { LoaderService } from './services/loader.service';
 import { HttpConfigInterceptor } from './interceptors/http.interceptor';
 import { DataService } from './services/data-sharing.service';
 import { HeaderService } from './services/header.service';
+import { ProductListService } from './services/product-list.service';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ export class CoreModule {
       providers: [
         HeaderService, 
         HomeService,
+        ProductListService,
         LoaderService,
         DataService, 
         { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true },

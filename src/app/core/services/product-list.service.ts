@@ -4,12 +4,12 @@ import {HttpClient} from '@angular/common/http'
 
 @Injectable({providedIn : 'root'})
 
-export class HeaderService {
+export class ProductListService {
 
     url = "http://localhost:3000"
     constructor(private http:HttpClient){}
 
-    public getHeaderDepartments(){
-        return this.http.get(this.url+"/departments");
+    public getProductLists(){
+        return this.http.get(this.url+"/productList");
     }
 }

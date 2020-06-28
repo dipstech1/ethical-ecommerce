@@ -13,7 +13,6 @@ export class DepartmentsMenuComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnChanges(): void {
-   console.log("departmentMenu ", this.departmentMenu)
   }
 
   ngOnInit() {
