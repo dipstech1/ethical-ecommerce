@@ -24,14 +24,9 @@
           <div class="d-flex flex-wrap">
             <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
               <label class="text-light opacity-75 text-nowrap mr-2 d-none d-sm-block" for="sorting">Sort by:</label>
-              <select class="form-control custom-select" id="sorting">
-                <option>Popularity</option>
-                <option>Low - Hight Price</option>
-                <option>High - Low Price</option>
-                <option>Average Rating</option>
-                <option>A - Z Order</option>
-                <option>Z - A Order</option>
-              </select><span class="font-size-sm text-light opacity-75 text-nowrap ml-2 d-none d-md-block">of 287 products</span>
+              <select class="form-control custom-select" id="sorting" (change) = "sortItem($event.target.value)">
+                <option *ngFor="let sort of sortByFilter" [value] = "sort.sortId">{{sort.sortName}}</option>
+              </select><span class="font-size-sm text-light opacity-75 text-nowrap ml-2 d-none d-md-block">of {{productList.length}} products</span>
             </div>
           </div>
           <div class="d-flex pb-3"><a class="nav-link-style nav-link-light mr-3" href="#"><i class="czi-arrow-left"></i></a><span class="font-size-md text-light">1 / 5</span><a class="nav-link-style nav-link-light ml-3" href="#"><i class="czi-arrow-right"></i></a></div>
