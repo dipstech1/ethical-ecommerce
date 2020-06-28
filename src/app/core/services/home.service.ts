@@ -11,4 +11,7 @@ export class HomeService {
     public getTrendingProducts(){
         return this.http.get(this.url+"/trending_products");
     }
+    public getSellers(){
+        return this.http.get(this.url+"/sellers");
+    }
 }

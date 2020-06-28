@@ -441,5 +441,107 @@
             "ratings":"4.5"
         }
      
+    ],
+
+    "sellers":[
+        {
+            "name":"Best Sellers",
+            "items":[
+                {
+                    "id":1,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":2,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":3,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":4,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                }
+            ]
+        },
+        {
+            "name":"New Arrivals",
+            "items":[
+                {
+                    "id":1,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":2,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":3,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":4,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                }
+            ]
+        },
+        {
+            "name":"Top rated",
+            "items":[
+                {
+                    "id":1,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":2,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":3,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                },
+                {
+                    "id":4,
+                    "title":"Mobile",
+                    "image_url":"../../../assets/img/shop/cart/widget/05.jpg",
+                    "price":450,
+                    "url":"shop-single-v2.html"
+                }
+            ]
+        }
     ]
 }

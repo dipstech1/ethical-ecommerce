@@ -1,40 +1,40 @@
 <section class="container pb-4 pb-md-5">
     <div class="row">
       <!-- Bestsellers-->
-      <div class="col-lg-4 col-md-6 mb-2 py-3">
+      <div class="col-lg-4 col-md-6 mb-2 py-3" *ngFor="let seller of sellers">
         <div class="widget">
-          <h3 class="widget-title">Bestsellers</h3>
-          <div class="media align-items-center pb-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/05.jpg" alt="Product"/></a>
+          <h3 class="widget-title">{{seller.name}}</h3>
+          <div class="media align-items-center pb-2 border-bottom" *ngFor="let item of seller.items"><a class="d-block mr-2" href="{{item.url}}"><img width="64" src="{{item.image_url}}" alt="Product"/></a>
             <div class="media-body">
-              <h6 class="widget-product-title"><a href="shop-single-v2.html">Wireless Bluetooth Headphones</a></h6>
-              <div class="widget-product-meta"><span class="text-accent">$259.<small>00</small></span></div>
+              <h6 class="widget-product-title"><a href="{{item.url}}">{{item.title}}</a></h6>
+              <div class="widget-product-meta"><span class="text-accent">${{item.price}}.<small>00</small></span></div>
             </div>
           </div>
-          <div class="media align-items-center py-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/06.jpg" alt="Product"/></a>
+          <!-- <div class="media align-items-center py-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/06.jpg" alt="Product"/></a>
             <div class="media-body">
               <h6 class="widget-product-title"><a href="shop-single-v2.html">Cloud Security Camera</a></h6>
               <div class="widget-product-meta"><span class="text-accent">$122.<small>00</small></span></div>
             </div>
-          </div>
-          <div class="media align-items-center py-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/07.jpg" alt="Product"/></a>
+          </div> -->
+          <!-- <div class="media align-items-center py-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/07.jpg" alt="Product"/></a>
             <div class="media-body">
               <h6 class="widget-product-title"><a href="shop-single-v2.html">Android Smartphone S10</a></h6>
               <div class="widget-product-meta"><span class="text-accent">$799.<small>00</small></span></div>
             </div>
-          </div>
-          <div class="media align-items-center py-2"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/08.jpg" alt="Product"/></a>
+          </div> -->
+          <!-- <div class="media align-items-center py-2"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../assets/img/shop/cart/widget/08.jpg" alt="Product"/></a>
             <div class="media-body">
               <h6 class="widget-product-title"><a href="shop-single-v2.html">Android Smart TV Box</a></h6>
               <div class="widget-product-meta"><span class="text-accent">$67.<small>00</small></span>
                 <del class="text-muted font-size-xs">$90.<small>43</small></del>
               </div>
             </div>
-          </div>
+          </div> -->
           <p class="mb-0">...</p><a class="font-size-sm" href="shop-grid-ls.html">View more<i class="czi-arrow-right font-size-xs ml-1"></i></a>
         </div>
       </div>
       <!-- New arrivals-->
-      <div class="col-lg-4 col-md-6 mb-2 py-3">
+      <!-- <div class="col-lg-4 col-md-6 mb-2 py-3">
         <div class="widget">
           <h3 class="widget-title">New arrivals</h3>
           <div class="media align-items-center pb-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../../assets/img/shop/widget/06.jpg" alt="Product"/></a>
@@ -65,9 +65,9 @@
           </div>
           <p class="mb-0">...</p><a class="font-size-sm" href="shop-grid-ls.html">View more<i class="czi-arrow-right font-size-xs ml-1"></i></a>
         </div>
-      </div>
+      </div> -->
       <!-- Top rated-->
-      <div class="col-lg-4 col-md-6 mb-2 py-3">
+      <!-- <div class="col-lg-4 col-md-6 mb-2 py-3">
         <div class="widget">
           <h3 class="widget-title">Top rated</h3>
           <div class="media align-items-center pb-2 border-bottom"><a class="d-block mr-2" href="shop-single-v2.html"><img width="64" src="../../../../assets/img/shop/widget/10.jpg" alt="Product"/></a>
@@ -100,6 +100,6 @@
           </div>
           <p class="mb-0">...</p><a class="font-size-sm" href="shop-grid-ls.html">View more<i class="czi-arrow-right font-size-xs ml-1"></i></a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
