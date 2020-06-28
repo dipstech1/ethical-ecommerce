@@ -12,6 +12,7 @@ import { Subject } from 'rxjs';
 export class HomeComponent implements OnInit, OnDestroy {
 
   trendingProduct = [];
+  sellers = [];
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
 
 
@@ -22,7 +23,13 @@ export class HomeComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
         this.trendingProduct = [...res]
-      })
+      });
+    this.service.getSellers()
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((result: any) => {
+        this.sellers = [...result];
+        console.log(this.sellers);
+      });
   }
 
   ngOnDestroy(): void {
