@@ -1,6 +1,4 @@
 export interface IUser {
-    body:string,
-    title:string,
-    id:number,
-    userId:number
+    name:string,
+    items:string
 }
