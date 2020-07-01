@@ -1,5 +1,5 @@
 import { Price } from './price.model';
-import { ProductInfo } from './product-info.model';
+import {Productinfo} from './productinfo.model';
 
 export class TrendingProducts {
     id: number;
@@ -8,7 +8,7 @@ export class TrendingProducts {
     color: string[];
     rating: number;
     price: Price;
-    productinfo: ProductInfo;
+    productinfo: Productinfo;
     quantity: number;
     addtocart: boolean;
     adtowishlist: boolean;
