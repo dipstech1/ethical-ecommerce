@@ -23,18 +23,22 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { CartManagementComponent } from './partial-views/cart-management/cart-management.component';
 import { StarRatingsComponent } from './components/star-rating/star-rating.component';
 import { RatingModule } from 'ng-starrating';
+import { ModalComponent } from './components/modal/modal.component';
+import { LoginSignupComponent } from './partial-views/login-signup/login-signup.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [ LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ],
-  entryComponents:[ConfirmPopupComponent],
+  declarations: [LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent,],
+  entryComponents: [ConfirmPopupComponent, ModalComponent, LoginSignupComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    RatingModule
+    RatingModule,
+    NgbModule
   ],
-  exports : [LoaderComponent,ConfirmPopupComponent,ReactiveFormsModule,FormsModule,HeaderComponent,
-    FooterComponent,WidgetsComponent,BreadcrumbComponent, CartManagementComponent,StarRatingsComponent]
+  exports: [LoaderComponent, ConfirmPopupComponent, ReactiveFormsModule, FormsModule, HeaderComponent,
+    FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent]
 })
 export class SharedModule { }

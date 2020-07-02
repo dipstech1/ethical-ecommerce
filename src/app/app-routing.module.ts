@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './core/guards/auth.guard';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   },
   {
     path:"add-to-cart",
+    canActivate: [AuthGuard],
     loadChildren:()=> import("./postauth/postauth.module").then(m=>m.PostauthModule)
   }
 ];

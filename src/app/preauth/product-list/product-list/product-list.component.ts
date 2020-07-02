@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProductListService } from 'src/app/core/services/product-list.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -41,7 +42,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
 
   
-  constructor(private productListService : ProductListService) { }
+  constructor(private productListService : ProductListService, private router : Router) { }
 
   ngOnInit() {
     this.productListService.getProductLists()
@@ -73,8 +74,10 @@ export class ProductListComponent implements OnInit, OnDestroy {
       this.productList = this.productList.sort((a,b) => a.productName.localeCompare(b.productName));
     }
 
+  }
 
-
+  goToCart(){
+    this.router.navigate(["add-to-cart"]);
   }
 
   ngOnDestroy(): void {

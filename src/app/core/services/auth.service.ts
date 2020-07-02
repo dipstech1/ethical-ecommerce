@@ -7,9 +7,8 @@ export class AuthService {
   constructor() {}
 
   public isAuthenticated() {
-    const userData = localStorage.getItem("userData");
-    console.log(userData);
-    if (userData && userData.length > 0) {
+    const userData = localStorage.getItem("token");
+    if (userData) {
       return true;
     } else {
       return false;

@@ -2,7 +2,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool navbar-stuck-toggler" href="#"><span class="navbar-tool-tooltip">Expand menu</span>
       <div class="navbar-tool-icon-box"><i class="navbar-tool-icon czi-menu"></i></div></a><a class="navbar-tool ml-1 ml-lg-0 mr-n1 mr-lg-2" href="#signin-modal" data-toggle="modal">
       <div class="navbar-tool-icon-box"><i class="navbar-tool-icon czi-user"></i></div>
-      <div class="navbar-tool-text ml-n3"><small>Hello, </small>John Doe</div></a> 
+      <!-- <div class="navbar-tool-text ml-n3"><small>Hello, </small>John Doe</div></a>  -->
+      <div class="navbar-tool-text ml-n3" (click)="onClick()"><small>Hello, </small>Login</div></a> 
+
+      <!-- <app-modal (close)="onClick()" *ngIf="modalOpen">
+        <div modalTitle>I am a REUSABLE TITLE</div>
+        <p>
+          <app-login-signup></app-login-signup>
+        </p>
+        <ng-container modalFooter>
+          <button class="ui button" (click)="onClick()">CLOSE ME!</button>
+        </ng-container>
+      </app-modal> -->
+
    
      <!--Cart-->
      <app-cart></app-cart>
