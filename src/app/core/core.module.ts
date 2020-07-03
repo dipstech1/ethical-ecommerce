@@ -12,6 +12,7 @@ import { HttpConfigInterceptor } from './interceptors/http.interceptor';
 import { DataService } from './services/data-sharing.service';
 import { HeaderService } from './services/header.service';
 import { ProductListService } from './services/product-list.service';
+import { CartService } from './services/cart.service';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ export class CoreModule {
         HomeService,
         ProductListService,
         LoaderService,
+        CartService,
         DataService, 
         { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },

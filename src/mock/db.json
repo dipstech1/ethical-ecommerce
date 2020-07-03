@@ -543,5 +543,48 @@
                 }
             ]
         }
+    ],
+
+    "cart":[
+        {
+            "pid":1,
+            "size":"6",
+            "quantity":1,
+            "productTitle" : "TH Jeans City Backpack",
+            "brand": "Tommy Hilfiger",
+            "color":"Green",
+            "price":66.23,
+            "image" : "../../../../assets/img/shop/cart/02.jpg"
+        },
+        {
+            "pid":2,
+            "size":"",
+            "quantity":1,
+            "productTitle" : "3-Color Sun Stash Hat",
+            "brand": "Check",
+            "color":"Blue",
+            "price":55.20,
+            "image" : "../../../../assets/img/shop/cart/03.jpg"
+        },
+        {
+            "pid":3,
+            "size":"",
+            "quantity":1,
+            "productTitle" : "Test1234",
+            "brand": "Tommy",
+            "color":"Black",
+            "price":1000.00,
+            "image" : "../../../../assets/img/shop/cart/04.jpg"
+        },
+        {
+            "pid":4,
+            "size":"",
+            "quantity":1,
+            "productTitle" : "TH  Backpack",
+            "brand": "Wooden",
+            "color":"Green",
+            "price":66.23,
+            "image" : "../../../../assets/img/shop/cart/02.jpg"
+        }
     ]
 }
