@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
+import { CartService } from 'src/app/core/services/cart.service';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +10,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  protected ngUnsubscribe: Subject<void> = new Subject<void>();
+  cartList = [];
+  totalPrice = 0;
+
+  constructor(private cartService: CartService) { }
+
 
   ngOnInit() {
+    this.getCartData();
   }
+
+  getCartData(){
+    this.cartService.getCartProducts()
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((res:any) => {
+        this.cartList = [...res];
+        this.getTotalPrice();
+      })
+  }
+
+  getTotalPrice(){
+    this.totalPrice = this.cartList.reduce((acc,obj) =>{
+      return acc + obj.price
+    },0);
+    this.totalPrice.toFixed(2)
+  }
+
+  removeItem(pid:any){
+    this.cartList = this.cartList.filter(x => x.pid != pid);
+    this.getTotalPrice();
+  }
+
 
 }
