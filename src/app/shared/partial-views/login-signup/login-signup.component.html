@@ -74,7 +74,7 @@
     <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Sign in</a></li>
     <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
   </ul>
-  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <button (click)="activeModal.dismiss('Close clicked')" class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 </div>
 <div class="modal-body tab-content py-4">
   <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
@@ -133,7 +133,7 @@
   </form>
 </div>
 </div>
-<!-- </div> -->
+
 
 
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LoginSignupComponent } from '../login-signup/login-signup.component';
 
 @Component({
   selector: 'app-header-toolbar',
@@ -10,7 +12,7 @@ export class HeaderToolbarComponent implements OnInit {
   modalOpen = false;
 
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -18,5 +20,7 @@ export class HeaderToolbarComponent implements OnInit {
   onClick() {
     this.modalOpen = !this.modalOpen;
   }
-
+  login() {
+    this.modalService.open(LoginSignupComponent);
+  }
 }
