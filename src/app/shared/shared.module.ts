@@ -25,10 +25,11 @@ import { StarRatingsComponent } from './components/star-rating/star-rating.compo
 import { RatingModule } from 'ng-starrating';
 import { ModalComponent } from './components/modal/modal.component';
 import { LoginSignupComponent } from './partial-views/login-signup/login-signup.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent,],
+  // tslint:disable-next-line: max-line-length
+  declarations: [LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent, ],
   entryComponents: [ConfirmPopupComponent, ModalComponent, LoginSignupComponent],
   imports: [
     CommonModule,
@@ -38,7 +39,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RatingModule,
     NgbModule
   ],
+  providers:[NgbActiveModal],
   exports: [LoaderComponent, ConfirmPopupComponent, ReactiveFormsModule, FormsModule, HeaderComponent,
+    // tslint:disable-next-line: max-line-length
     FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent]
 })
 export class SharedModule { }

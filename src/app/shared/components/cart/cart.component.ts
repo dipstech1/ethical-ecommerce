@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { CartService } from 'src/app/core/services/cart.service';
 import { takeUntil } from 'rxjs/operators';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LoginSignupComponent } from '../../partial-views/login-signup/login-signup.component';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +16,7 @@ export class CartComponent implements OnInit {
   cartList = [];
   totalPrice = 0;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService,private modalService: NgbModal) { }
 
 
   ngOnInit() {
@@ -30,17 +32,20 @@ export class CartComponent implements OnInit {
       })
   }
 
-  getTotalPrice(){
+  getTotalPrice() {
     this.totalPrice = this.cartList.reduce((acc,obj) =>{
       return acc + obj.price
     },0);
     this.totalPrice.toFixed(2)
   }
 
-  removeItem(pid:any){
+  removeItem(pid: any) {
     this.cartList = this.cartList.filter(x => x.pid != pid);
     this.getTotalPrice();
   }
 
-
+  checkout() {
+    console.log("hello");
+    this.modalService.open(LoginSignupComponent);
+  }
 }
