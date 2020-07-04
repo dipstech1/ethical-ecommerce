@@ -1,4 +1,5 @@
 export interface IUser {
     name:string,
-    items:string
+    emailaddress: string,
+    password:string
 }
