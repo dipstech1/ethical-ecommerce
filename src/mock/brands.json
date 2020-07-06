@@ -1,0 +1,41 @@
+{
+    "brands" : [
+        {
+            "id":1,
+            "brandName":"Samsung"
+        },
+        {
+            "id":1,
+            "brandName":"Philips"
+        },
+        {
+            "id":1,
+            "brandName":"IPhone"
+        },
+        {
+            "id":1,
+            "brandName":"VIVO"
+        },
+        {
+            "id":1,
+            "brandName":"Redmi"
+        },
+        {
+            "id":1,
+            "brandName":"Nokia"
+        },
+        {
+            "id":1,
+            "brandName":"LG"
+        },
+        {
+            "id":1,
+            "brandName":"NVDIA"
+        },
+        {
+            "id":1,
+            "brandName":"ASUS"
+        }
+
+    ]
+}

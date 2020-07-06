@@ -168,55 +168,12 @@
           <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
         </div>
         <ul class="widget-list cz-filter-list list-unstyled pt-1" style="max-height: 12rem;" data-simplebar data-simplebar-auto-hide="false">
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
+          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1" *ngFor="let brand of brands">
             <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="adidas">
-              <label class="custom-control-label cz-filter-item-text" for="adidas">Samsung</label>
-            </div><span class="font-size-xs text-muted">425</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="ataylor">
-              <label class="custom-control-label cz-filter-item-text" for="ataylor">iPhone</label>
-            </div><span class="font-size-xs text-muted">15</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="armani">
-              <label class="custom-control-label cz-filter-item-text" for="armani">Nokia</label>
-            </div><span class="font-size-xs text-muted">18</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="banana">
-              <label class="custom-control-label cz-filter-item-text" for="banana">Lenevo</label>
-            </div><span class="font-size-xs text-muted">103</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="bilabong">
-              <label class="custom-control-label cz-filter-item-text" for="bilabong">Redmi</label>
-            </div><span class="font-size-xs text-muted">27</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="birkenstock">
-              <label class="custom-control-label cz-filter-item-text" for="birkenstock">Vivo</label>
-            </div><span class="font-size-xs text-muted">10</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="klein">
-              <label class="custom-control-label cz-filter-item-text" for="klein">Oppo</label>
-            </div><span class="font-size-xs text-muted">365</span>
-          </li>
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1">
-            <div class="custom-control custom-checkbox">
-              <input class="custom-control-input" type="checkbox" id="columbia">
-              <label class="custom-control-label cz-filter-item-text" for="columbia">Oneplus</label>
-            </div><span class="font-size-xs text-muted">508</span>
-          </li>
-           
+              <input  name="{{ brand.brandName }}" class="custom-control-input" type="checkbox" id="{{brand.id}}" [checked]="brand.isChecked" (change) = "selectedBrands($event)">
+              <label class="custom-control-label cz-filter-item-text" for="{{brand.id}}">{{brand.brandName}}</label>
+            </div>
+          </li>  
         </ul>
       </div>
       

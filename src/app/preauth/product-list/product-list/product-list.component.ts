@@ -13,6 +13,8 @@ export class ProductListComponent implements OnInit, OnDestroy {
  
 
   productList = [];
+  brands = [];
+
   sortByFilter = [
     {
       sortId:1,
@@ -40,16 +42,31 @@ export class ProductListComponent implements OnInit, OnDestroy {
     }
   ]
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
+  productListResponse: any[];
 
   
   constructor(private productListService : ProductListService, private router : Router) { }
 
   ngOnInit() {
+    this.getProductsData();
+  }
+
+  getProductsData(){
     this.productListService.getProductLists()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res:any) => {
         this.productList = [...res];
-      })
+        this.productListResponse = [...res];
+      });
+
+    this.productListService.getBrands()
+    .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((res:any) => {
+        this.brands = [...res];
+        this.brands = this.brands.map((b:any) => {
+          return {...b, isChecked : false}
+        })
+      });
   }
 
   /**
@@ -76,8 +93,13 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
   }
 
+
   goToCart(){
     this.router.navigate(["add-to-cart"]);
+  }
+
+  showSelectedBrand(brand = []){
+    this.productList = this.productListResponse.filter(x => brand.includes(x.brandId));
   }
 
   ngOnDestroy(): void {

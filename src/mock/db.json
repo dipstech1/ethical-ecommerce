@@ -358,7 +358,8 @@
             "isSale":false,
             "price":"150.00",
             "priceUnit":"$",
-            "ratings":"5"
+            "ratings":"5",
+            "brandId":"1"
         },
         {
             "pid":1,
@@ -368,7 +369,8 @@
             "isSale":false,
             "price":"200.00",
             "priceUnit":"$",
-            "ratings":"3"
+            "ratings":"3",
+            "brandId":"2"
         },
         {
             "pid":1,
@@ -378,7 +380,8 @@
             "isSale":false,
             "price":"300.00",
             "priceUnit":"$",
-            "ratings":"4.5"
+            "ratings":"4.5",
+            "brandId":"3"
         },
         {
             "pid":1,
@@ -388,7 +391,8 @@
             "isSale":false,
             "price":"150.00",
             "priceUnit":"$",
-            "ratings":"5"
+            "ratings":"5",
+            "brandId":"1"
         },
         {
             "pid":1,
@@ -398,7 +402,8 @@
             "isSale":false,
             "price":"200.00",
             "priceUnit":"$",
-            "ratings":"3"
+            "ratings":"3",
+            "brandId":"2"
         },
         {
             "pid":1,
@@ -408,7 +413,8 @@
             "isSale":false,
             "price":"300.00",
             "priceUnit":"$",
-            "ratings":"4.5"
+            "ratings":"4.5",
+            "brandId":"8"
         },
         {
             "pid":1,
@@ -418,7 +424,8 @@
             "isSale":false,
             "price":"150.00",
             "priceUnit":"$",
-            "ratings":"5"
+            "ratings":"5",
+            "brandId":"9"
         },
         {
             "pid":1,
@@ -428,7 +435,8 @@
             "isSale":false,
             "price":"200.00",
             "priceUnit":"$",
-            "ratings":"3"
+            "ratings":"3",
+            "brandId":"6"
         },
         {
             "pid":1,
@@ -438,7 +446,8 @@
             "isSale":false,
             "price":"300.00",
             "priceUnit":"$",
-            "ratings":"4.5"
+            "ratings":"4.5",
+            "brandId":"5"
         }
      
     ],
@@ -586,5 +595,45 @@
             "price":66.23,
             "image" : "../../../../assets/img/shop/cart/02.jpg"
         }
+    ],
+
+    "brands" : [
+        {
+            "id":1,
+            "brandName":"Samsung"
+        },
+        {
+            "id":2,
+            "brandName":"Philips"
+        },
+        {
+            "id":3,
+            "brandName":"IPhone"
+        },
+        {
+            "id":4,
+            "brandName":"VIVO"
+        },
+        {
+            "id":5,
+            "brandName":"Redmi"
+        },
+        {
+            "id":6,
+            "brandName":"Nokia"
+        },
+        {
+            "id":7,
+            "brandName":"LG"
+        },
+        {
+            "id":8,
+            "brandName":"NVDIA"
+        },
+        {
+            "id":9,
+            "brandName":"ASUS"
+        }
+
     ]
 }
