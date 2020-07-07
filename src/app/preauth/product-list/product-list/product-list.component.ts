@@ -98,8 +98,19 @@ export class ProductListComponent implements OnInit, OnDestroy {
     this.router.navigate(["add-to-cart"]);
   }
 
-  showSelectedBrand(brand = []){
-    this.productList = this.productListResponse.filter(x => brand.includes(x.brandId));
+  showSelectedBrand(brand:Array<any>){
+    if(brand.length > 0)
+      this.productList = this.productListResponse.filter(x => brand.includes(x.brandId));
+    else
+      this.productList = [...this.productListResponse];
+  }
+
+  showSelectedRating(rating : Array<any>){
+    console.log("rating ", rating)
+    if(rating.length > 0)
+      this.productList = this.productListResponse.filter(x => rating.includes(x.ratings));
+    else
+      this.productList = [...this.productListResponse];
   }
 
   ngOnDestroy(): void {
