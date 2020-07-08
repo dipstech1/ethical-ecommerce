@@ -16,4 +16,7 @@ export class HomeService {
     public getSellers(){
         return this.http.get(this.url+"/sellers");
     }
+    public getPromoBanners(){
+        return this.http.get(this.url+"/promobanners");
+    }
 }

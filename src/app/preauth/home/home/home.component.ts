@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   trendingProduct = [];
   sellers = [];
+  promoBanners = [];
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
 
 
@@ -29,6 +30,12 @@ export class HomeComponent implements OnInit, OnDestroy {
       .subscribe((result: any) => {
         this.sellers = [...result];
         console.log(this.sellers);
+      });
+    this.service.getPromoBanners()
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((result: any) => {
+        this.promoBanners = [...result];
+        console.log(this.promoBanners);
       });
   }
 

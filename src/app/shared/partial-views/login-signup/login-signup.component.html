@@ -64,7 +64,7 @@
       <div class="password-toggle">
         <input class="form-control" type="password" formControlName="password" id="su-password" required>
         <span class="text-danger"
-      *ngIf="(registerFormControl.email.touched || submitted) && registerFormControl.email.errors?.required">
+      *ngIf="(registerFormControl.password.touched || submitted) && registerFormControl.password.errors?.required">
       Password is required
   </span>
         <span class="text-danger"
@@ -89,12 +89,15 @@
       .touched && registerFormControl.cpassword.errors?.cpassword">
       Enter a valid confirm password
   </span>
+  <span class="text-danger"
+      *ngIf="registerFormControl.cpassword.errors.confirmedValidator">
+      Password and Confirm Password must be match.  </span>
       <label class="password-toggle-btn">
           <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
         </label>
       </div>
     </div>
-    <button class="btn btn-primary btn-block btn-shadow" type="submit"  >Sign up</button>
+    <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
   </form>
 </div>
 </div>

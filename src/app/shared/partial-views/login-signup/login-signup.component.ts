@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-signup',
@@ -12,7 +12,7 @@ export class LoginSignupComponent implements OnInit {
   registerForm: FormGroup;
   loginForm: FormGroup;
   submitted = false;
-  loginSubmitted=false;
+  loginSubmitted = false;
 
   constructor(private formBuilder: FormBuilder, public activeModal: NgbActiveModal)
     {}    
@@ -28,6 +28,8 @@ export class LoginSignupComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       cpassword: ['', [Validators.required, Validators.minLength(6)]]
+  }, { 
+    validator: ConfirmedValidator('password', 'cpassword')
   });
   }
 
@@ -48,9 +50,24 @@ export class LoginSignupComponent implements OnInit {
     }
 }
 onLogin(){
-  this.loginSubmitted=true;
+  this.loginSubmitted = true;
   if (this.loginForm.invalid) {
     return;
   }
 }
+}
+
+export function ConfirmedValidator(controlName: string, matchingControlName: string){
+  return (formGroup: FormGroup) => {
+      const control = formGroup.controls[controlName];
+      const matchingControl = formGroup.controls[matchingControlName];
+      if (matchingControl.errors && !matchingControl.errors.confirmedValidator) {
+          return;
+      }
+      if (control.value !== matchingControl.value) {
+          matchingControl.setErrors({ confirmedValidator: true });
+      } else {
+          matchingControl.setErrors(null);
+      }
+  }
 }

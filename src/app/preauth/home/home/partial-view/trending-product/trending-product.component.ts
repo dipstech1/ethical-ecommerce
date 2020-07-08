@@ -8,6 +8,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 export class TrendingProductComponent implements OnInit, OnChanges {
   
 
+  // tslint:disable-next-line: no-input-rename
   @Input('trendingProduct') trendingProduct;
 
   constructor() { }

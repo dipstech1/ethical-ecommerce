@@ -586,5 +586,21 @@
             "price":66.23,
             "image" : "../../../../assets/img/shop/cart/02.jpg"
         }
+    ],
+    "promobanners":[
+        {
+            "id":1,
+            "offers":"Newest",
+            "productname":"Latest Laptop",
+            "productimageurl":"../../../../../../assets/img/home/banners/banner.png"
+
+        },
+        {
+            "id":2,
+            "offers":"Latest",
+            "productname":"Latest Product",
+            "productimageurl":"../../../../../../assets/img/home/banners/product2.jpg"
+
+        }
     ]
 }
