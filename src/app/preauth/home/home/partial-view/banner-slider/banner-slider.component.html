@@ -4,38 +4,18 @@
         <!-- Slider     -->
         <div class="col-xl-9 pt-xl-4 order-xl-2">
           <div class="cz-carousel">
-            <div class="cz-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;controls&quot;: false, &quot;loop&quot;: false}">
-              <div>
-                <div class="row align-items-center">
-                  <div class="col-md-6 order-md-2"><img class="d-block mx-auto" src="../../../../../../assets/img/home/hero-slider/05.jpg" alt="VR Collection"></div>
-                  <div class="col-lg-5 col-md-6 offset-lg-1 order-md-1 pt-4 pb-md-4 text-center text-md-left">
-                    <h2 class="font-weight-light pb-1 from-bottom">Check our all</h2>
-                    <h1 class="display-4 from-bottom delay-1">Smartphones</h1>
-                    <h5 class="font-weight-light pb-3 from-bottom delay-2">&amp; Accessories collection</h5><a class="btn btn-primary btn-shadow scale-up delay-4" href="shop-grid-ls.html">Shop Now<i class="czi-arrow-right ml-2 mr-n1"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row align-items-center">
-                  <div class="col-md-6 order-md-2"><img class="d-block mx-auto" src="../../../../../../assets/img/home/hero-slider/04.jpg" alt="VR Collection"></div>
-                  <div class="col-lg-5 col-md-6 offset-lg-1 order-md-1 pt-4 pb-md-4 text-center text-md-left">
-                    <h2 class="font-weight-light pb-1 from-left">Explore the best</h2>
-                    <h1 class="display-4 from-left delay-1">VR Collection</h1>
-                    <h5 class="font-weight-light pb-3 from-left delay-2">on the market</h5><a class="btn btn-primary btn-shadow scale-up delay-4" href="shop-grid-ls.html">Shop Now<i class="czi-arrow-right ml-2 mr-n1"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="row align-items-center">
-                  <div class="col-md-6 order-md-2"><img class="d-block mx-auto" src="../../../../../../assets/img/home/hero-slider/06.jpg" alt="VR Collection"></div>
-                  <div class="col-lg-5 col-md-6 offset-lg-1 order-md-1 pt-4 pb-md-4 text-center text-md-left">
-                    <h2 class="font-weight-light pb-1 scale-up">World of music with</h2>
-                    <h1 class="display-4 scale-up delay-1">Headphones</h1>
-                    <h5 class="font-weight-light pb-3 scale-up delay-2">Choose between top brands</h5><a class="btn btn-primary btn-shadow scale-up delay-4" href="shop-grid-ls.html">Shop Now<i class="czi-arrow-right ml-2 mr-n1"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <ngb-carousel >
+                  <ng-template ngbSlide *ngFor="let slide of slider">
+                      <div class="row align-items-center">
+                          <div class="col-md-6 order-md-2"><img class="d-block mx-auto" [src]="slide.imgSrc" alt="VR Collection"></div>
+                          <div class="col-lg-5 col-md-6 offset-lg-1 order-md-1 pt-4 pb-md-4 text-center text-md-left">
+                            <h2 class="font-weight-light pb-1 from-bottom">{{slide.t1}}</h2>
+                            <h1 class="display-4 from-bottom delay-1">{{slide.t2}}</h1>
+                            <h5 class="font-weight-light pb-3 from-bottom delay-2">&amp;{{slide.t3}}</h5><a class="btn btn-primary btn-shadow scale-up delay-4" href="shop-grid-ls.html">Shop Now<i class="czi-arrow-right ml-2 mr-n1"></i></a>
+                          </div>
+                        </div>
+                  </ng-template>
+              </ngb-carousel>
           </div>
         </div>
         <!-- Banner group-->
