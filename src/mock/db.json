@@ -634,6 +634,22 @@
             "id":9,
             "brandName":"ASUS"
         }
+    ],
 
+    "promobanners":[
+        {
+            "id":1,
+            "offers":"Newest",
+            "productname":"Latest Laptop",
+            "productimageurl":"../../../../../../assets/img/home/banners/banner.png"
+
+        },
+        {
+            "id":2,
+            "offers":"Latest",
+            "productname":"Latest Product",
+            "productimageurl":"../../../../../../assets/img/home/banners/product2.jpg"
+
+        }
     ]
 }

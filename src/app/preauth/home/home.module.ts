@@ -8,6 +8,7 @@ import { TrendingProductComponent } from './home/partial-view/trending-product/t
 import { PromoBannerComponent } from './home/partial-view/promo-banner/promo-banner.component';
 import { YoutubeFeedComponent } from './home/partial-view/youtube-feed/youtube-feed.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';  
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule,
+    NgbModule
   ]
 })
 export class HomeModule { }

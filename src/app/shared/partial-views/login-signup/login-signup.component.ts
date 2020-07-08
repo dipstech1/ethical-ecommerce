@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-signup',
@@ -12,37 +12,62 @@ export class LoginSignupComponent implements OnInit {
   registerForm: FormGroup;
   loginForm: FormGroup;
   submitted = false;
+  loginSubmitted = false;
 
-  constructor(private formBuilder: FormBuilder,public activeModal: NgbActiveModal
-    ) { 
-      this.loginForm = this.formBuilder.group({     
-        email: ['', [Validators.required, Validators.email]],
-        password: ['', [Validators.required, Validators.minLength(6)]]
-      });
-      this.registerForm = this.formBuilder.group({
-        name: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
-        password: ['', [Validators.required, Validators.minLength(6)]],
-        cpassword: ['', [Validators.required, Validators.minLength(6)]]
-    });
-    }
+  constructor(private formBuilder: FormBuilder, public activeModal: NgbActiveModal)
+    {}    
 
   ngOnInit() {
+    this.loginForm = this.formBuilder.group
+    ({     
+      emails: ['', [Validators.required, Validators.email]],
+      passwords: ['', [Validators.required, Validators.minLength(6)]]
+    });
+    this.registerForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      cpassword: ['', [Validators.required, Validators.minLength(6)]]
+  }, { 
+    validator: ConfirmedValidator('password', 'cpassword')
+  });
+  }
+
+  get registerFormControl() {
+    return this.registerForm.controls;
+  }
+  get loginFormControl() {
+    return this.loginForm.controls;
   }
   closeModal() {
     this.activeModal.close('Modal Closed');
   }
   onSubmit() {
     this.submitted = true;
-  console.log("here it is submitted");
     // stop here if form is invalid
     if (this.registerForm.invalid) {
-      alert(this.registerForm.invalid);
-        return;
+      return;
     }
-
 }
 onLogin(){
-  
+  this.loginSubmitted = true;
+  if (this.loginForm.invalid) {
+    return;
+  }
 }
+}
+
+export function ConfirmedValidator(controlName: string, matchingControlName: string){
+  return (formGroup: FormGroup) => {
+      const control = formGroup.controls[controlName];
+      const matchingControl = formGroup.controls[matchingControlName];
+      if (matchingControl.errors && !matchingControl.errors.confirmedValidator) {
+          return;
+      }
+      if (control.value !== matchingControl.value) {
+          matchingControl.setErrors({ confirmedValidator: true });
+      } else {
+          matchingControl.setErrors(null);
+      }
+  }
 }

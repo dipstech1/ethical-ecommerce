@@ -26,7 +26,7 @@ export class CartComponent implements OnInit {
   getCartData(){
     this.cartService.getCartProducts()
       .pipe(takeUntil(this.ngUnsubscribe))
-      .subscribe((res:any) => {
+      .subscribe((res: any) => {
         this.cartList = [...res];
         this.getTotalPrice();
       })
@@ -45,7 +45,6 @@ export class CartComponent implements OnInit {
   }
 
   checkout() {
-    console.log("hello");
     this.modalService.open(LoginSignupComponent);
   }
 }
