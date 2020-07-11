@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { LoaderComponent } from './components/loader/loader.component'
 import { RouterModule } from '@angular/router';
-
+import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 
 
 import { ConfirmPopupComponent } from './components/confirm-popup/confirm-popup.component';
@@ -37,7 +37,8 @@ import { NgbModule,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     RouterModule,
     RatingModule,
-    NgbModule
+    NgbModule,
+    AutocompleteLibModule
   ],
   providers:[NgbActiveModal],
   exports: [LoaderComponent, ConfirmPopupComponent, ReactiveFormsModule, FormsModule, HeaderComponent,

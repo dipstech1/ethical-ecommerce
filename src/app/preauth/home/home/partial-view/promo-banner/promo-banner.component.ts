@@ -9,13 +9,11 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 export class PromoBannerComponent implements OnInit, OnChanges {
   // tslint:disable-next-line: no-input-rename
   @Input('promoBanners') promoBanners;
-  constructor(config: NgbCarouselConfig) {  
-    config.interval = 200000;  
-    config.wrap = true;  
-    config.keyboard = false;  
-    config.pauseOnHover = false;  
+  constructor() {  
+    
   }  
   ngOnChanges(): void {
+    console.log(this.promoBanners)
   }
 
   ngOnInit() {

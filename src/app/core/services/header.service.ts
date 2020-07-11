@@ -12,4 +12,8 @@ export class HeaderService {
     public getHeaderDepartments(){
         return this.http.get(this.url+"/departments");
     }
+
+    public getSearchResult(searchResult){
+       return this.http.get("http://www.omdbapi.com/?apikey=c8a68242&s=" + event)
+    }
 }

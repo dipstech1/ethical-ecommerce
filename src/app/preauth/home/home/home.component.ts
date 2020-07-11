@@ -34,8 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.service.getPromoBanners()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((result: any) => {
-        this.promoBanners = [...result];
-        console.log(this.promoBanners);
+        this.promoBanners = {...result};
       });
   }
 
