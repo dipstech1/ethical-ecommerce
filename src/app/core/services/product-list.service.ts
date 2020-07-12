@@ -16,4 +16,8 @@ export class ProductListService {
     public getBrands(){
         return this.http.get(this.url+"/brands");
     }
+
+    public getProductSuggestion(){
+        return this.http.get(this.url+"/productSuggestion");
+    }
 }

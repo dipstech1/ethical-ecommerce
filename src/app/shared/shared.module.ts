@@ -43,6 +43,6 @@ import { NgbModule,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   providers:[NgbActiveModal],
   exports: [LoaderComponent, ConfirmPopupComponent, ReactiveFormsModule, FormsModule, HeaderComponent,
     // tslint:disable-next-line: max-line-length
-    FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent]
+    FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent,NgbModule]
 })
 export class SharedModule { }

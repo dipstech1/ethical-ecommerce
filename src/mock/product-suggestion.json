@@ -1,0 +1,39 @@
+{
+    "productSuggestion" : [
+        {
+            "productImage" : "../../../../assets/img/shop/catalog/68.jpg",
+            "category" : "Smartwatches",
+            "title":"Health Fitness Smartwatch",
+            "price": 118,
+            "rating":4
+        },
+        {
+            "productImage" : "../../../../assets/img/shop/catalog/69.jpg",
+            "category" : "Smartwatches",
+            "title":"Fitness Smartwatch",
+            "price": 165,
+            "rating":3
+        },
+        {
+            "productImage" : "../../../../assets/img/shop/catalog/66.jpg",
+            "category" : "Smartwatches",
+            "title":"Health Fitness Smartwatch",
+            "price": 118,
+            "rating":5
+        },
+        {
+            "productImage" : "../../../../assets/img/shop/catalog/64.jpg",
+            "category" : "Smartwatches",
+            "title":"Health Fitness Smartwatch",
+            "price": 118,
+            "rating":3
+        },
+        {
+            "productImage" : "../../../../assets/img/shop/catalog/68.jpg",
+            "category" : "Smartwatches",
+            "title":"Health Fitness Smartwatch",
+            "price": 118,
+            "rating":4
+        }
+    ]
+}
