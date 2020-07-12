@@ -1,15 +1,15 @@
 <div class="container pt-lg-1 pb-5 mb-md-3">
     <div class="card card-body pt-5">
       <h2 class="h3 text-center pb-4">Cheaper together</h2>
-      <div class="cz-carousel">
+      <div class="">
         <div class="cz-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;controls&quot;: false, &quot;nav&quot;: true, &quot;autoHeight&quot;: true}">
-          <div>
+          <div *ngFor="let combo of comboSuggestion">
             <div class="row align-items-center">
               <div class="col-md-3 col-sm-5">
-                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img src="../../../../../../assets/img/shop/catalog/70.jpg" alt="Product"></a>
+                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img [src]="combo?.yourProduct?.productImage" alt="Product"></a>
                   <div class="card-body py-2"><span class="d-inline-block bg-secondary font-size-ms rounded-sm py-1 px-2 mb-3">Your product</span>
-                    <h3 class="product-title font-size-sm"><a href="#">Smartwatch Youth Edition</a></h3>
-                    <div class="product-price text-accent">$124.<small>99</small></div>
+                    <h3 class="product-title font-size-sm"><a href="#">{{combo?.yourProduct?.title}}</a></h3>
+                    <div class="product-price text-accent">${{combo?.yourProduct?.price}}</div>
                   </div>
                 </div>
               </div>
@@ -17,11 +17,11 @@
                 <div class="display-4 font-weight-light text-muted px-4">+</div>
               </div>
               <div class="col-md-3 col-sm-5">
-                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img src="../../../../../../assets/img/shop/catalog/72.jpg" alt="Product"></a>
-                  <div class="card-body py-2"><span class="d-inline-block bg-danger font-size-ms text-white rounded-sm py-1 px-2 mb-3">-20%</span>
-                    <h3 class="product-title font-size-sm"><a href="#">Smartwatch Wireless Charger</a></h3>
-                    <div class="product-price"><span class="text-accent">$16.<small>00</small></span>
-                      <del class="font-size-sm text-muted">$20.<small>00</small></del>
+                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img [src]="combo?.linkedProduct?.productImage" alt="Product"></a>
+                  <div class="card-body py-2"><span class="d-inline-block bg-danger font-size-ms text-white rounded-sm py-1 px-2 mb-3">{{combo?.linkedProduct?.discount}}</span>
+                    <h3 class="product-title font-size-sm"><a href="#">{{combo?.linkedProduct?.title}}</a></h3>
+                    <div class="product-price"><span class="text-accent">${{combo?.linkedProduct?.newPrice}}</span>
+                      <del class="font-size-sm text-muted">${{combo?.linkedProduct?.oldPrice}}</del>
                     </div>
                   </div>
                 </div>
@@ -31,46 +31,14 @@
               </div>
               <div class="col-md-4 pt-3 pt-md-0">
                 <div class="bg-secondary p-4 rounded-lg text-center mx-auto" style="max-width: 20rem;">
-                  <div class="h3 font-weight-normal text-accent mb-3 mr-1">$140.<small>99</small></div>
+                  <div class="h3 font-weight-normal text-accent mb-3 mr-1">${{combo.total}}</div>
                   <button class="btn btn-primary" type="button">Purchase together</button>
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="row align-items-center">
-              <div class="col-md-3">
-                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img src="../../../../../../assets/img/shop/catalog/70.jpg" alt="Product"></a>
-                  <div class="card-body py-2"><span class="d-inline-block bg-secondary font-size-ms rounded-sm py-1 px-2 mb-3">Your product</span>
-                    <h3 class="product-title font-size-sm"><a href="#">Smartwatch Youth Edition</a></h3>
-                    <div class="product-price text-accent">$124.<small>99</small></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1 text-center">
-                <div class="display-4 font-weight-light text-muted px-4">+</div>
-              </div>
-              <div class="col-md-3">
-                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img src="../../../../../../assets/img/shop/catalog/71.jpg" alt="Product"></a>
-                  <div class="card-body py-2"><span class="d-inline-block bg-danger font-size-ms text-white rounded-sm py-1 px-2 mb-3">-15%</span>
-                    <h3 class="product-title font-size-sm"><a href="#">Bluetooth Headset Air (White)</a></h3>
-                    <div class="product-price"><span class="text-accent">$59.<small>00</small></span>
-                      <del class="font-size-sm text-muted">$69.<small>00</small></del>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-none d-md-block col-md-1 text-center">
-                <div class="display-4 font-weight-light text-muted px-4">=</div>
-              </div>
-              <div class="col-md-4 pt-3 pt-md-0">
-                <div class="bg-secondary p-4 rounded-lg text-center mx-auto" style="max-width: 20rem;">
-                  <div class="h3 font-weight-normal text-accent mb-3 mr-1">$183.<small>99</small></div>
-                  <button class="btn btn-primary" type="button">Purchase together</button>
-                </div>
-              </div>
-            </div>
-          </div>
+         
+         
         </div>
       </div>
     </div>

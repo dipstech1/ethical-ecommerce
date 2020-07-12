@@ -11,6 +11,7 @@ import { Subject } from 'rxjs';
 export class ProductDetailsComponent implements OnInit {
 
   productSuggestion = [];
+  comboSuggestion = [];
 
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
 
@@ -23,6 +24,13 @@ export class ProductDetailsComponent implements OnInit {
     .subscribe((res:any) => {
       this.productSuggestion = [...res];
     })
+
+    this.productService.getComboProductSuggestion()
+    .pipe(takeUntil(this.ngUnsubscribe))
+    .subscribe((res:any) => {
+      this.comboSuggestion = [...res];
+    })
+
   }
 
 }

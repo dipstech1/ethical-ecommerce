@@ -20,4 +20,8 @@ export class ProductListService {
     public getProductSuggestion(){
         return this.http.get(this.url+"/productSuggestion");
     }
+
+    public getComboProductSuggestion(){
+        return this.http.get(this.url+"/cheapercombo");
+    }
 }
