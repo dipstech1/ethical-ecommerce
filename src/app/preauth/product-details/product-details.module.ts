@@ -10,13 +10,12 @@ import { GeneralinfoTabComponent } from './product-details/partial-view/generali
 import { ProductCarouselComponent } from './product-details/partial-view/product-carousel/product-carousel.component';
 import { ProductBundleComponent } from './product-details/partial-view/product-bundle/product-bundle.component';
 
-
 @NgModule({
   declarations: [ProductDetailsComponent, ReviewsTabComponent, TechspecsTabComponent, GeneralinfoTabComponent, ProductCarouselComponent, ProductBundleComponent],
   imports: [
     CommonModule,
     ProductDetailsRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class ProductDetailsModule { }

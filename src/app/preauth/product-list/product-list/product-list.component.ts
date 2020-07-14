@@ -10,104 +10,115 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit, OnDestroy {
- 
+
 
   productList = [];
   brands = [];
 
   sortByFilter = [
     {
-      sortId:1,
-      sortName:"Popularity"
+      sortId: 1,
+      sortName: "Popularity"
     },
     {
-      sortId:2,
-      sortName:"Low - Hight Price"
+      sortId: 2,
+      sortName: "Low - Hight Price"
     },
     {
-      sortId:3,
-      sortName:"High - Low Price"
+      sortId: 3,
+      sortName: "High - Low Price"
     },
     {
-      sortId:4,
-      sortName:"Average Rating"
+      sortId: 4,
+      sortName: "Average Rating"
     },
     {
-      sortId:5,
-      sortName:"A - Z Order"
+      sortId: 5,
+      sortName: "A - Z Order"
     },
     {
-      sortId:6,
-      sortName:"Z - A Order"
+      sortId: 6,
+      sortName: "Z - A Order"
     }
   ]
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
   productListResponse: any[];
 
-  
-  constructor(private productListService : ProductListService, private router : Router) { }
+  page = 1;
+  itemsPerPage = 5;
+  pageSize: number = 2;
+
+  constructor(private productListService: ProductListService, private router: Router) { }
 
   ngOnInit() {
     this.getProductsData();
   }
 
-  getProductsData(){
+  getProductsData() {
     this.productListService.getProductLists()
       .pipe(takeUntil(this.ngUnsubscribe))
-      .subscribe((res:any) => {
+      .subscribe((res: any) => {
         this.productList = [...res];
         this.productListResponse = [...res];
       });
 
     this.productListService.getBrands()
-    .pipe(takeUntil(this.ngUnsubscribe))
-      .subscribe((res:any) => {
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((res: any) => {
         this.brands = [...res];
-        this.brands = this.brands.map((b:any) => {
-          return {...b, isChecked : false}
+        this.brands = this.brands.map((b: any) => {
+          return { ...b, isChecked: false }
         })
       });
+  }
+
+  public onPageChange(pageNum: number): void {
+    this.pageSize = this.itemsPerPage * (pageNum - 1);
+  }
+
+  public changePagesize(num: number): void {
+    this.itemsPerPage = this.pageSize + num;
   }
 
   /**
    * @param sortId
    * Sort product list based on selected sort  
   */
-  sortItem(sortId:number){
+  sortItem(sortId: number) {
     console.log("B ", this.productList)
-    if(sortId == 1){
-      this.productList = this.productList.sort((a,b) => parseFloat(b.ratings) - parseFloat(a.ratings));
+    if (sortId == 1) {
+      this.productList = this.productList.sort((a, b) => parseFloat(b.ratings) - parseFloat(a.ratings));
     }
 
-    if(sortId == 2){
-      this.productList = this.productList.sort((a,b) => parseFloat(a.price) - parseFloat(b.price));
+    if (sortId == 2) {
+      this.productList = this.productList.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
     }
 
-    if(sortId == 3){
-      this.productList = this.productList.sort((a,b) => parseFloat(b.price) - parseFloat(a.price));
+    if (sortId == 3) {
+      this.productList = this.productList.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
     }
 
-    if(sortId == 5){
-      this.productList = this.productList.sort((a,b) => a.productName.localeCompare(b.productName));
+    if (sortId == 5) {
+      this.productList = this.productList.sort((a, b) => a.productName.localeCompare(b.productName));
     }
 
   }
 
 
-  goToCart(){
+  goToCart() {
     this.router.navigate(["add-to-cart"]);
   }
 
-  showSelectedBrand(brand:Array<any>){
-    if(brand.length > 0)
+  showSelectedBrand(brand: Array<any>) {
+    if (brand.length > 0)
       this.productList = this.productListResponse.filter(x => brand.includes(x.brandId));
     else
       this.productList = [...this.productListResponse];
   }
 
-  showSelectedRating(rating : Array<any>){
+  showSelectedRating(rating: Array<any>) {
     console.log("rating ", rating)
-    if(rating.length > 0)
+    if (rating.length > 0)
       this.productList = this.productListResponse.filter(x => rating.includes(x.ratings));
     else
       this.productList = [...this.productListResponse];

@@ -1,195 +1,316 @@
 <div class="cz-sidebar rounded-lg box-shadow-lg" id="shop-sidebar">
-    <div class="cz-sidebar-header box-shadow-sm">
-      <button class="close ml-auto" type="button" data-dismiss="sidebar" aria-label="Close"><span class="d-inline-block font-size-xs font-weight-normal align-middle">Close sidebar</span><span class="d-inline-block align-middle ml-2" aria-hidden="true">&times;</span></button>
+  <div class="cz-sidebar-header box-shadow-sm">
+    <button class="close ml-auto" type="button" data-dismiss="sidebar" aria-label="Close"><span
+        class="d-inline-block font-size-xs font-weight-normal align-middle">Close sidebar</span><span
+        class="d-inline-block align-middle ml-2" aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="cz-sidebar-body" data-simplebar data-simplebar-auto-hide="true">
+    <!-- Categories-->
+    <div class="widget widget-categories mb-4 pb-4 border-bottom">
+      <h3 class="widget-title">Categories</h3>
+      <div class="accordion mt-n1" id="shop-categories">
+        <!-- Shoes-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a class="collapsed" href="#shoes" role="button" data-toggle="collapse"
+                aria-expanded="false" aria-controls="shoes">Computers<span class="accordion-indicator"></span></a></h3>
+          </div>
+          <div class="collapse" id="shoes" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links cz-filter">
+                <div class="input-group-overlay input-group-sm mb-2">
+                  <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
+                    placeholder="Search">
+                  <div class="input-group-append-overlay"><span class="input-group-text"><i
+                        class="czi-search"></i></span></div>
+                </div>
+                <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar
+                  data-simplebar-auto-hide="false">
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">View all</span><span
+                        class="font-size-xs text-muted ml-3">1,953</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Personal Computer</span><span
+                        class="font-size-xs text-muted ml-3">547</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Laptop</span><span
+                        class="font-size-xs text-muted ml-3">1156</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">MacBook</span><span
+                        class="font-size-xs text-muted ml-3">310</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Gaming Laptop</span><span
+                        class="font-size-xs text-muted ml-3">310</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Touchscreen Laptop</span><span
+                        class="font-size-xs text-muted ml-3">310</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Assemble Computer</span><span
+                        class="font-size-xs text-muted ml-3">310</span></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Clothing-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a href="#clothing" role="button" data-toggle="collapse" aria-expanded="true"
+                aria-controls="clothing">Smartphones<span class="accordion-indicator"></span></a></h3>
+          </div>
+          <div class="collapse show" id="clothing" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links cz-filter">
+                <div class="input-group-overlay input-group-sm mb-2">
+                  <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
+                    placeholder="Search">
+                  <div class="input-group-append-overlay"><span class="input-group-text"><i
+                        class="czi-search"></i></span></div>
+                </div>
+                <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar
+                  data-simplebar-auto-hide="false">
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">View all</span><span
+                        class="font-size-xs text-muted ml-3">2,548</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Android Phone</span><span
+                        class="font-size-xs text-muted ml-3">2235</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Windows Phone</span><span
+                        class="font-size-xs text-muted ml-3">10</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">iPhone</span><span
+                        class="font-size-xs text-muted ml-3">107</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">One Plus</span><span
+                        class="font-size-xs text-muted ml-3">93</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Blackberry</span><span
+                        class="font-size-xs text-muted ml-3">122</span></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bags-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a class="collapsed" href="#bags" role="button" data-toggle="collapse"
+                aria-expanded="false" aria-controls="bags">Cameras<span class="accordion-indicator"></span></a></h3>
+          </div>
+          <div class="collapse" id="bags" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links cz-filter">
+                <div class="input-group-overlay input-group-sm mb-2">
+                  <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
+                    placeholder="Search">
+                  <div class="input-group-append-overlay"><span class="input-group-text"><i
+                        class="czi-search"></i></span></div>
+                </div>
+                <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar
+                  data-simplebar-auto-hide="false">
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">View all</span><span
+                        class="font-size-xs text-muted ml-3">358</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">DSLR</span><span class="font-size-xs text-muted ml-3">238</span></a>
+                  </li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Smart Camera</span><span
+                        class="font-size-xs text-muted ml-3">116</span></a></li>
+                  <li class="widget-list-item cz-filter-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+                        class="cz-filter-item-text">Digital Camera</span><span
+                        class="font-size-xs text-muted ml-3">104</span></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sunglasses-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a class="collapsed" href="#sunglasses" role="button" data-toggle="collapse"
+                aria-expanded="false" aria-controls="sunglasses">Headphones<span class="accordion-indicator"></span></a>
+            </h3>
+          </div>
+          <div class="collapse" id="sunglasses" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links">
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View
+                        all</span><span class="font-size-xs text-muted ml-3">1,842</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center"
+                      href="#"><span>Earbuds</span><span class="font-size-xs text-muted ml-3">953</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center"
+                      href="#"><span>Bluetooth Headphone</span><span class="font-size-xs text-muted ml-3">589</span></a>
+                  </li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Wired
+                        Headphone</span><span class="font-size-xs text-muted ml-3">300</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Watches-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a class="collapsed" href="#watches" role="button" data-toggle="collapse"
+                aria-expanded="false" aria-controls="watches">Watches<span class="accordion-indicator"></span></a></h3>
+          </div>
+          <div class="collapse" id="watches" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links">
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View
+                        all</span><span class="font-size-xs text-muted ml-3">734</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Fashion
+                        Watches</span><span class="font-size-xs text-muted ml-3">572</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Casual
+                        Watches</span><span class="font-size-xs text-muted ml-3">110</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Luxury
+                        Watches</span><span class="font-size-xs text-muted ml-3">34</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Sport
+                        Watches</span><span class="font-size-xs text-muted ml-3">18</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accessories-->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="accordion-heading"><a class="collapsed" href="#accessories" role="button" data-toggle="collapse"
+                aria-expanded="false" aria-controls="accessories">TV<span class="accordion-indicator"></span></a></h3>
+          </div>
+          <div class="collapse" id="accessories" data-parent="#shop-categories">
+            <div class="card-body">
+              <div class="widget widget-links">
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View
+                        all</span><span class="font-size-xs text-muted ml-3">920</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Smart
+                        TV</span><span class="font-size-xs text-muted ml-3">364</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Android
+                        TV</span><span class="font-size-xs text-muted ml-3">405</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>LED
+                        TV</span><span class="font-size-xs text-muted ml-3">131</span></a></li>
+                  <li class="widget-list-item"><a
+                      class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Curved
+                        TV</span><span class="font-size-xs text-muted ml-3">20</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="cz-sidebar-body" data-simplebar data-simplebar-auto-hide="true">
-      <!-- Categories-->
-      <div class="widget widget-categories mb-4 pb-4 border-bottom">
-        <h3 class="widget-title">Categories</h3>
-        <div class="accordion mt-n1" id="shop-categories">
-          <!-- Shoes-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a class="collapsed" href="#shoes" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="shoes">Computers<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse" id="shoes" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links cz-filter">
-                  <div class="input-group-overlay input-group-sm mb-2">
-                    <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text" placeholder="Search">
-                    <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
-                  </div>
-                  <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar data-simplebar-auto-hide="false">
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">View all</span><span class="font-size-xs text-muted ml-3">1,953</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Personal Computer</span><span class="font-size-xs text-muted ml-3">547</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Laptop</span><span class="font-size-xs text-muted ml-3">1156</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">MacBook</span><span class="font-size-xs text-muted ml-3">310</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Gaming Laptop</span><span class="font-size-xs text-muted ml-3">310</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Touchscreen Laptop</span><span class="font-size-xs text-muted ml-3">310</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Assemble Computer</span><span class="font-size-xs text-muted ml-3">310</span></a></li>
-                     
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Clothing-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a href="#clothing" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="clothing">Smartphones<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse show" id="clothing" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links cz-filter">
-                  <div class="input-group-overlay input-group-sm mb-2">
-                    <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text" placeholder="Search">
-                    <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
-                  </div>
-                  <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar data-simplebar-auto-hide="false">
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">View all</span><span class="font-size-xs text-muted ml-3">2,548</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Android Phone</span><span class="font-size-xs text-muted ml-3">2235</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Windows Phone</span><span class="font-size-xs text-muted ml-3">10</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">iPhone</span><span class="font-size-xs text-muted ml-3">107</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">One Plus</span><span class="font-size-xs text-muted ml-3">93</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Blackberry</span><span class="font-size-xs text-muted ml-3">122</span></a></li>
-                     
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Bags-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a class="collapsed" href="#bags" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="bags">Cameras<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse" id="bags" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links cz-filter">
-                  <div class="input-group-overlay input-group-sm mb-2">
-                    <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text" placeholder="Search">
-                    <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
-                  </div>
-                  <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar data-simplebar-auto-hide="false">
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">View all</span><span class="font-size-xs text-muted ml-3">358</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">DSLR</span><span class="font-size-xs text-muted ml-3">238</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Smart Camera</span><span class="font-size-xs text-muted ml-3">116</span></a></li>
-                    <li class="widget-list-item cz-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="cz-filter-item-text">Digital Camera</span><span class="font-size-xs text-muted ml-3">104</span></a></li>
-                     
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Sunglasses-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a class="collapsed" href="#sunglasses" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="sunglasses">Headphones<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse" id="sunglasses" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links">
-                  <ul class="widget-list">
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View all</span><span class="font-size-xs text-muted ml-3">1,842</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Earbuds</span><span class="font-size-xs text-muted ml-3">953</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Bluetooth Headphone</span><span class="font-size-xs text-muted ml-3">589</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Wired Headphone</span><span class="font-size-xs text-muted ml-3">300</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Watches-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a class="collapsed" href="#watches" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="watches">Watches<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse" id="watches" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links">
-                  <ul class="widget-list">
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View all</span><span class="font-size-xs text-muted ml-3">734</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Fashion Watches</span><span class="font-size-xs text-muted ml-3">572</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Casual Watches</span><span class="font-size-xs text-muted ml-3">110</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Luxury Watches</span><span class="font-size-xs text-muted ml-3">34</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Sport Watches</span><span class="font-size-xs text-muted ml-3">18</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Accessories-->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="accordion-heading"><a class="collapsed" href="#accessories" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="accessories">TV<span class="accordion-indicator"></span></a></h3>
-            </div>
-            <div class="collapse" id="accessories" data-parent="#shop-categories">
-              <div class="card-body">
-                <div class="widget widget-links">
-                  <ul class="widget-list">
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>View all</span><span class="font-size-xs text-muted ml-3">920</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Smart TV</span><span class="font-size-xs text-muted ml-3">364</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Android TV</span><span class="font-size-xs text-muted ml-3">405</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>LED TV</span><span class="font-size-xs text-muted ml-3">131</span></a></li>
-                    <li class="widget-list-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span>Curved TV</span><span class="font-size-xs text-muted ml-3">20</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Price range-->
+    <div class="widget mb-4 pb-4 border-bottom">
+      <h3 class="widget-title">Price</h3>
+
+     
+      <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+      <div class="w-50 pr-2 mr-2" style="display: inline-block">
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+          <input class="form-control cz-range-slider-value-min" type="text" [(ngModel)]="minValue">
         </div>
       </div>
-      <!-- Price range-->
-      <div class="widget mb-4 pb-4 border-bottom">
-        <h3 class="widget-title">Price</h3>
-        <div class="cz-range-slider" data-start-min="250" data-start-max="680" data-min="0" data-max="1000" data-step="1">
-          <div class="cz-range-slider-ui"></div>
-          <div class="d-flex pb-1">
-            <div class="w-50 pr-2 mr-2">
-              <div class="input-group input-group-sm">
-                <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                <input class="form-control cz-range-slider-value-min" type="text">
-              </div>
+      <div class="w-50 pl-2" style="display: inline-block">
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+          <input class="form-control cz-range-slider-value-max" type="text" [(ngModel)]="maxValue">
+        </div>
+      </div>
+
+
+      <!-- <div class="cz-range-slider" data-start-min="250" data-start-max="680" data-min="0" data-max="1000" data-step="1">
+        <div class="cz-range-slider-ui"></div>
+        <div class="d-flex pb-1">
+          <div class="w-50 pr-2 mr-2">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+              <input class="form-control cz-range-slider-value-min" type="text">
             </div>
-            <div class="w-50 pl-2">
-              <div class="input-group input-group-sm">
-                <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                <input class="form-control cz-range-slider-value-max" type="text">
-              </div>
+          </div>
+          <div class="w-50 pl-2">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+              <input class="form-control cz-range-slider-value-max" type="text">
             </div>
           </div>
         </div>
+      </div> -->
+    </div>
+    <!-- Filter by Brand-->
+    <div class="widget cz-filter mb-4 pb-4 border-bottom">
+      <h3 class="widget-title">Brand</h3>
+      <div class="input-group-overlay input-group-sm mb-2">
+        <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
+          placeholder="Search">
+        <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
       </div>
-      <!-- Filter by Brand-->
-      <div class="widget cz-filter mb-4 pb-4 border-bottom">
-        <h3 class="widget-title">Brand</h3>
-        <div class="input-group-overlay input-group-sm mb-2">
-          <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text" placeholder="Search">
-          <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
-        </div>
-        <ul class="widget-list cz-filter-list list-unstyled pt-1" style="max-height: 12rem;" data-simplebar data-simplebar-auto-hide="false">
-          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1" *ngFor="let brand of brands">
+      <ul class="widget-list cz-filter-list list-unstyled pt-1" style="max-height: 12rem;" data-simplebar
+        data-simplebar-auto-hide="false">
+        <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1" *ngFor="let brand of brands">
+          <div class="custom-control custom-checkbox">
+            <input name="{{ brand.brandName }}" class="custom-control-input" type="checkbox" id="{{brand.id}}"
+              [checked]="brand.isChecked" (change)="selectedBrands($event)">
+            <label class="custom-control-label cz-filter-item-text" for="{{brand.id}}">{{brand.brandName}}</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Filter by Ratin g-->
+    <div class="widget">
+      <h3 class="widget-title">Rating</h3>
+      <div class="d-flex flex-wrap">
+        <ul class="widget-list cz-filter-list list-unstyled pt-1" style="max-height: 12rem;">
+          <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1"
+            *ngFor="let rating of ratingList">
             <div class="custom-control custom-checkbox">
-              <input  name="{{ brand.brandName }}" class="custom-control-input" type="checkbox" id="{{brand.id}}" [checked]="brand.isChecked" (change) = "selectedBrands($event)">
-              <label class="custom-control-label cz-filter-item-text" for="{{brand.id}}">{{brand.brandName}}</label>
+              <input name="rating-{{ rating }}" class="custom-control-input" type="checkbox" id="rating-{{rating}}"
+                (change)="selectedRating($event)">
+              <label class="custom-control-label cz-filter-item-text" for="rating-{{rating}}"><app-star-rating [rating] = "rating"></app-star-rating> 
+              </label>
             </div>
-          </li>  
+          </li>
         </ul>
-      </div>
-      
-      <!-- Filter by Color-->
-      <div class="widget">
-        <h3 class="widget-title">Rating</h3>
-        <div class="d-flex flex-wrap">
-          <ul class="widget-list cz-filter-list list-unstyled pt-1" style="max-height: 12rem;" >
-            <li class="cz-filter-item d-flex justify-content-between align-items-center mb-1" *ngFor="let rating of ratingList">
-              <div class="custom-control custom-checkbox">
-                <input  name="rating-{{ rating }}" class="custom-control-input" type="checkbox" id="rating-{{rating}}" (change) = "selectedRating($event)">
-                <label class="custom-control-label cz-filter-item-text" for="rating-{{rating}}">{{rating}}</label>
-              </div>
-            </li>  
-          </ul>
-        </div>
       </div>
     </div>
   </div>
+</div>
