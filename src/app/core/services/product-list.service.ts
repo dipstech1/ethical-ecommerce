@@ -24,4 +24,8 @@ export class ProductListService {
     public getComboProductSuggestion(){
         return this.http.get(this.url+"/cheapercombo");
     }
+
+    public getTechSpecs(id:any){
+        return this.http.get(this.url+"/specs");
+    }   
 }

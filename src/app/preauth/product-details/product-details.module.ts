@@ -9,9 +9,10 @@ import { TechspecsTabComponent } from './product-details/partial-view/techspecs-
 import { GeneralinfoTabComponent } from './product-details/partial-view/generalinfo-tab/generalinfo-tab.component';
 import { ProductCarouselComponent } from './product-details/partial-view/product-carousel/product-carousel.component';
 import { ProductBundleComponent } from './product-details/partial-view/product-bundle/product-bundle.component';
+import { ProductInfoComponent } from './product-details/partial-view/product-info/product-info.component';
 
 @NgModule({
-  declarations: [ProductDetailsComponent, ReviewsTabComponent, TechspecsTabComponent, GeneralinfoTabComponent, ProductCarouselComponent, ProductBundleComponent],
+  declarations: [ProductDetailsComponent, ReviewsTabComponent, TechspecsTabComponent, GeneralinfoTabComponent, ProductCarouselComponent, ProductBundleComponent, ProductInfoComponent],
   imports: [
     CommonModule,
     ProductDetailsRoutingModule,

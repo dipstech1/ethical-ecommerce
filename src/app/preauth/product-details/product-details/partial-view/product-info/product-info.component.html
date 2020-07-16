@@ -1,0 +1,10 @@
+<div class="d-md-flex justify-content-between align-items-start pb-4 mb-4 border-bottom">
+        <div class="media align-items-center mr-md-3"><img [src]="productData?.productImage" width="90" alt="Product thumb">
+          <div class="mdeia-body pl-3">
+            <h6 class="font-size-base mb-2">{{productData?.title}}</h6>
+            <div class="h4 font-weight-normal text-accent">${{productData?.price}}</div>
+          </div>
+        </div>
+        <!--Cart Management-->
+        <app-cart-management></app-cart-management>
+</div>

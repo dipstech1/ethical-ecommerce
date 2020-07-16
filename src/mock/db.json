@@ -698,5 +698,88 @@
             },
             "total" : 140.99
         }
-    ]
+    ],
+
+    "specs" :{
+        "specDetails" : [
+            {
+                "specification": "General specs",
+                "specList" : [
+                    {
+                        "category" : "Model",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Model",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Model",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Model",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Model",
+                        "details" : "Amazfit Smartwatch"
+                    }
+                ]
+            },
+            {
+                "specification": "Physical specs",
+                "specList" : [
+                    
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    }
+                ]
+            },
+            {
+                "specification": "Display specs",
+                "specList" : [
+                    
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    }
+                ]
+            },
+            {
+                "specification": "Functions specs",
+                "specList" : [
+                    
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    },
+                    {
+                        "category" : "Shape",
+                        "details" : "Amazfit Smartwatch"
+                    }
+                ]
+            }
+        ],
+        "productImage": "../../../../assets/img/shop/single/gallery/th05.jpg",
+        "price": 129.00,
+        "title" : "Smartwatch Youth Edition"
+    } 
 }
