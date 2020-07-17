@@ -66,77 +66,30 @@
         </div>
       </div>
       <!-- Review-->
-      <div class="product-review pb-4 mb-4 border-bottom">
+      <div class="product-review pb-4 mb-4 border-bottom" *ngFor="let usr of userReviews"> 
         <div class="d-flex mb-3">
-          <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="../../../../assets/img/shop/reviews/01.jpg" alt="Rafael Marquez"/>
+          <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" [src]="usr?.profileImg" alt="Rafael Marquez"/>
             <div class="media-body pl-3">
-              <h6 class="font-size-sm mb-0">Rafael Marquez</h6><span class="font-size-ms text-muted">June 28, 2019</span>
+              <h6 class="font-size-sm mb-0">{{usr?.userName}}</h6><span class="font-size-ms text-muted">June 28, 2019</span>
             </div>
           </div>
           <div>
-            <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-            </div>
-            <div class="font-size-ms text-muted">83% of users found this review helpful</div>
+              <app-star-rating [rating] = "usr?.rating"></app-star-rating>
+
+            <div class="font-size-ms text-muted">{{usr?.helpful}}% of users found this review helpful</div>
           </div>
         </div>
-        <p class="font-size-md mb-2">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est...</p>
+        <p class="font-size-md mb-2">{{usr?.review}}</p>
         <ul class="list-unstyled font-size-ms pt-1">
-          <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi, tempora</li>
-          <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae, quis autem</li>
+          <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>{{usr?.pros}}</li>
+          <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>{{usr?.cons}}</li>
         </ul>
         <div class="text-nowrap">
-          <button class="btn-like" type="button">15</button>
-          <button class="btn-dislike" type="button">3</button>
+          <button class="btn-like" type="button">{{usr?.like}}</button>
+          <button class="btn-dislike" type="button">{{usr?.unlike}}</button>
         </div>
       </div>
-      <!-- Review-->
-      <div class="product-review pb-4 mb-4 border-bottom">
-        <div class="d-flex mb-3">
-          <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="../../../../assets/img/shop/reviews/02.jpg" alt="Barbara Palson"/>
-            <div class="media-body pl-3">
-              <h6 class="font-size-sm mb-0">Barbara Palson</h6><span class="font-size-ms text-muted">May 17, 2019</span>
-            </div>
-          </div>
-          <div>
-            <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
-            </div>
-            <div class="font-size-ms text-muted">99% of users found this review helpful</div>
-          </div>
-        </div>
-        <p class="font-size-md mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="list-unstyled font-size-ms pt-1">
-          <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi, tempora</li>
-          <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae, quis autem</li>
-        </ul>
-        <div class="text-nowrap">
-          <button class="btn-like" type="button">34</button>
-          <button class="btn-dislike" type="button">1</button>
-        </div>
-      </div>
-      <!-- Review-->
-      <div class="product-review pb-4 mb-4 border-bottom">
-        <div class="d-flex mb-3">
-          <div class="media media-ie-fix align-items-center mr-4 pr-2"><img class="rounded-circle" width="50" src="../../../../assets/img/shop/reviews/03.jpg" alt="Daniel Adams"/>
-            <div class="media-body pl-3">
-              <h6 class="font-size-sm mb-0">Daniel Adams</h6><span class="font-size-ms text-muted">May 8, 2019</span>
-            </div>
-          </div>
-          <div>
-            <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-            </div>
-            <div class="font-size-ms text-muted">75% of users found this review helpful</div>
-          </div>
-        </div>
-        <p class="font-size-md mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
-        <ul class="list-unstyled font-size-ms pt-1">
-          <li class="mb-1"><span class="font-weight-medium">Pros:&nbsp;</span>Consequuntur magni, voluptatem sequi</li>
-          <li class="mb-1"><span class="font-weight-medium">Cons:&nbsp;</span>Architecto beatae,  quis autem, voluptatem sequ</li>
-        </ul>
-        <div class="text-nowrap">
-          <button class="btn-like" type="button">26</button>
-          <button class="btn-dislike" type="button">9</button>
-        </div>
-      </div>
+      
       <div class="text-center">
         <button class="btn btn-outline-accent" type="button"><i class="czi-reload mr-2"></i>Load more reviews</button>
       </div>

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ReviewsTabComponent implements OnInit {
 
   @Input('productReviews') productReviews;
+  @Input('userReviews') userReviews;
   constructor() { }
 
   ngOnInit() {

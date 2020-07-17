@@ -793,6 +793,47 @@
             "three" : 9,
             "two" : 4,
             "one" : 2
-        }
+        },
+        "usersReviews" : [
+            {
+                "userId": 4,
+                "userName" : "Rafael Marquez",
+                "rating" : 4,
+                "review" : "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est",
+                "pros": "Consequuntur magni, voluptatem sequi, tempora",
+                "cons" : "Architecto beatae, quis autem",
+                "helpful" : 83,
+                "like" : 15,
+                "unlike" : 3,
+                "profileImg" : "../../../../assets/img/shop/reviews/01.jpg",
+                "date": ""
+            },
+            {
+                "userId": 4,
+                "userName" : "Barbara Palson",
+                "rating" : 3,
+                "review" : "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est",
+                "pros": "Consequuntur magni, voluptatem sequi, tempora",
+                "cons" : "Architecto beatae, quis autem",
+                "helpful" : 56,
+                "like" : 5,
+                "unlike" : 12,
+                "profileImg" : "../../../../assets/img/shop/reviews/02.jpg",
+                "date": ""
+            },
+            {
+                "userId": 4,
+                "userName" : "Daniel Adams",
+                "rating" : 4,
+                "review" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. minus id quod maxime placeat facere possimus, omnis voluptas assumenda est",
+                "pros": "Consequuntur magni, voluptatem sequi, tempora",
+                "cons" : "Architecto beatae, quis autem",
+                "helpful" : 83,
+                "like" : 15,
+                "unlike" : 3,
+                "profileImg" : "../../../../assets/img/shop/reviews/03.jpg",
+                "date": ""
+            }
+        ]
     }
 }
