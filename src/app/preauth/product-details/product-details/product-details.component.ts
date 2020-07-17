@@ -15,6 +15,7 @@ export class ProductDetailsComponent implements OnInit {
   comboSuggestion = [];
 
   specDetails : any;
+  productReviews : any;
 
   protected ngUnsubscribe: Subject<void> = new Subject<void>();
 
@@ -40,6 +41,12 @@ export class ProductDetailsComponent implements OnInit {
     .pipe(takeUntil(this.ngUnsubscribe))
     .subscribe((res:any) => {
       this.comboSuggestion = [...res];
+    });
+
+    this.productService.getReviews(2)
+    .pipe(takeUntil(this.ngUnsubscribe))
+    .subscribe((res:any) => {
+      this.productReviews = res.productReviews;
     })
 
   }

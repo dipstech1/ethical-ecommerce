@@ -781,5 +781,18 @@
         "productImage": "../../../../assets/img/shop/single/gallery/th05.jpg",
         "price": 129.00,
         "title" : "Smartwatch Youth Edition"
-    } 
+    },
+    
+    "reviews" : {
+        "productReviews" : {
+            "totalReview":74 ,
+            "recommended": 54,
+            "averageRating": 4,
+            "five" : 43,
+            "four" : 16,
+            "three" : 9,
+            "two" : 4,
+            "one" : 2
+        }
+    }
 }

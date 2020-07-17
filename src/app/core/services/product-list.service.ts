@@ -28,4 +28,8 @@ export class ProductListService {
     public getTechSpecs(id:any){
         return this.http.get(this.url+"/specs");
     }   
+
+    public getReviews(id:any){
+        return this.http.get(this.url+"/reviews");
+    }   
 }
