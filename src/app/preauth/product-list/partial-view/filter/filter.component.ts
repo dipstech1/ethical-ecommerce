@@ -16,6 +16,7 @@ export class FilterComponent implements OnInit {
   };
 
   @Input('brands') brands;
+  @Input('categories') categories
 
   @Output() showBrand:any = new EventEmitter();
   @Output() showRating = new EventEmitter();

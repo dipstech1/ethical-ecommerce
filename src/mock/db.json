@@ -835,5 +835,60 @@
                 "date": ""
             }
         ]
-    }
+    },
+
+    "productCategories" : [
+        {
+            "category" : "Computers",
+            "categoryID" : 3,
+            "categoryList" : [
+                {
+                    "cid" : 3,
+                    "cname":"Personal Computer",
+                    "quantity" : 456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"Laptops",
+                    "quantity" : 456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"MacBook",
+                    "quantity" : 456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"Gaming Laptop",
+                    "quantity" : 456
+                }
+            ]
+        },
+        {
+            "category" : "Smartphones",
+            "categoryID" : 4,
+            "categoryList" : [
+                {
+                    "cid" : 3,
+                    "cname":"Android Phone",
+                    "quantity" : 2456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"Windows Phone",
+                    "quantity" : 456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"iPhone",
+                    "quantity" : 456
+                },
+                {
+                    "cid" : 3,
+                    "cname":"One Plus",
+                    "quantity" : 456
+                }
+            ]
+        }
+    ]
 }

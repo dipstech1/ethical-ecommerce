@@ -13,6 +13,10 @@ export class ProductListService {
         return this.http.get(this.url+"/productList");
     }
 
+    public getProductCategories(){
+        return this.http.get(this.url + "/productCategories");
+    }
+
     public getBrands(){
         return this.http.get(this.url+"/brands");
     }

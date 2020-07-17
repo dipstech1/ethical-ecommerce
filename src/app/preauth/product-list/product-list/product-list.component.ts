@@ -47,6 +47,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   page = 1;
   itemsPerPage = 5;
   pageSize: number = 2;
+  categories: any[];
 
   constructor(private productListService: ProductListService, private router: Router) { }
 
@@ -70,6 +71,13 @@ export class ProductListComponent implements OnInit, OnDestroy {
           return { ...b, isChecked: false }
         })
       });
+
+      this.productListService.getProductCategories()
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe((res: any) => {
+        this.categories = [...res];        
+      });
+
   }
 
   public onPageChange(pageNum: number): void {

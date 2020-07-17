@@ -6,10 +6,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FilterComponent } from './partial-view/filter/filter.component';
 import { Ng5SliderModule } from 'ng5-slider';
+import { ProductCategoriesComponent } from './partial-view/product-categories/product-categories.component';
 
 
 @NgModule({
-  declarations: [ProductListComponent, FilterComponent],
+  declarations: [ProductListComponent, FilterComponent, ProductCategoriesComponent],
   imports: [
     CommonModule,
     ProductListRoutingModule,
