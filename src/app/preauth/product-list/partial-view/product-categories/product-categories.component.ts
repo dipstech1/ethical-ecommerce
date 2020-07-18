@@ -11,11 +11,13 @@ export class ProductCategoriesComponent implements OnInit, OnChanges {
 
   @Input('category') category;
   categories = [];
+  originalCategory = [];
 
   constructor() { }
 
   ngOnChanges(): void {
-    console.log("this.adasdasdas " , this.category)
+    this.categories = [...this.category.categoryList];
+    this.originalCategory = [...this.categories];
   }
 
   ngOnInit() {
@@ -23,7 +25,12 @@ export class ProductCategoriesComponent implements OnInit, OnChanges {
   }
 
   getDivId(categorName){
-    return `#${categorName}`;
+    return `${categorName}`;
+  }
+
+  searchProduct(searchTerm : string){
+    searchTerm = searchTerm.toLowerCase();
+    this.categories = this.originalCategory.filter(c => c.cname.toLowerCase().includes(searchTerm));
   }
 
 }

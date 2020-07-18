@@ -1,4 +1,4 @@
-<div class="card">
+<!-- <div class="card">
         <div class="card-header">
           <h3 class="accordion-heading"><a class="collapsed" href="#shoes" role="button" data-toggle="collapse"
               aria-expanded="false" aria-controls="shoes">{{category?.category}}<span class="accordion-indicator"></span></a></h3>
@@ -8,7 +8,7 @@
             <div class="widget widget-links cz-filter">
               <div class="input-group-overlay input-group-sm mb-2">
                 <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
-                  placeholder="Search">
+                  placeholder="Search" (input) = "searchProduct($event.target.value)">
                 <div class="input-group-append-overlay"><span class="input-group-text"><i
                       class="czi-search"></i></span></div>
               </div>
@@ -18,7 +18,7 @@
                     class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
                       class="cz-filter-item-text">View all</span><span
                       class="font-size-xs text-muted ml-3">1,953</span></a></li>
-                <li class="widget-list-item cz-filter-item" *ngFor="let list of category?.categoryList"><a
+                <li class="widget-list-item cz-filter-item" *ngFor="let list of categories"><a
                     class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
                       class="cz-filter-item-text">{{list.cname}}</span><span
                       class="font-size-xs text-muted ml-3">{{list.quantity}}</span></a></li>
@@ -26,4 +26,31 @@
             </div>
           </div>
         </div>
-      </div>
+ </div> -->
+
+
+ <span class="accordion-indicator"></span>
+
+ <ngb-accordion #acc="ngbAccordion">
+   <ngb-panel [id]="category?.category" [title]="category?.category">
+    <ng-template ngbPanelContent>
+        <div class="input-group-overlay input-group-sm mb-2">
+            <input class="cz-filter-search form-control form-control-sm appended-form-control" type="text"
+              placeholder="Search" (input) = "searchProduct($event.target.value)">
+            <div class="input-group-append-overlay"><span class="input-group-text"><i
+                  class="czi-search"></i></span></div>
+          </div>
+      <ul class="widget-list cz-filter-list pt-1" style="height: 12rem;" data-simplebar
+      data-simplebar-auto-hide="false">
+      <li class="widget-list-item cz-filter-item"><a
+          class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+            class="cz-filter-item-text">View all</span><span
+            class="font-size-xs text-muted ml-3">1,953</span></a></li>
+      <li class="widget-list-item cz-filter-item" *ngFor="let list of categories"><a
+          class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+            class="cz-filter-item-text">{{list.cname}}</span><span
+            class="font-size-xs text-muted ml-3">{{list.quantity}}</span></a></li>
+    </ul>
+    </ng-template>
+   </ngb-panel>
+ </ngb-accordion>

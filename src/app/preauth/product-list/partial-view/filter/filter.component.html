@@ -19,17 +19,17 @@
       <h3 class="widget-title">Price</h3>
 
      
-      <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+      <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options" (userChangeEnd) = "priceChange($event)"></ng5-slider>
       <div class="w-50 pr-2 mr-2" style="display: inline-block">
         <div class="input-group input-group-sm">
           <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-          <input class="form-control cz-range-slider-value-min" type="text" [(ngModel)]="minValue">
+          <input (blur) = "priceChange($event)" class="form-control cz-range-slider-value-min" type="text" [(ngModel)]="minValue">
         </div>
       </div>
       <div class="w-50 pl-2" style="display: inline-block">
         <div class="input-group input-group-sm">
           <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-          <input class="form-control cz-range-slider-value-max" type="text" [(ngModel)]="maxValue">
+          <input (blur) = "priceChange($event)" class="form-control cz-range-slider-value-max" type="text" [(ngModel)]="maxValue">
         </div>
       </div>
 

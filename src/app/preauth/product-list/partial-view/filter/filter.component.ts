@@ -20,6 +20,7 @@ export class FilterComponent implements OnInit {
 
   @Output() showBrand:any = new EventEmitter();
   @Output() showRating = new EventEmitter();
+  @Output() showPriceRange = new EventEmitter();
 
 
   ratingList = [5,4,3,2,1]
@@ -60,6 +61,14 @@ export class FilterComponent implements OnInit {
     }
     this.showRating.emit(this.selectedRatingData)
 
+  }
+
+  priceChange(e = {}){
+    let price = {
+      minPrice : this.minValue,
+      maxPrice : this.maxValue
+    }
+    this.showPriceRange.emit(price);
   }
 
 }

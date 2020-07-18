@@ -356,10 +356,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/76.jpg",
             "isSale":false,
-            "price":"150.00",
+            "price":150.00,
             "priceUnit":"$",
-            "ratings":"5",
-            "brandId":"1"
+            "ratings":"5"
         },
         {
             "pid":1,
@@ -367,10 +366,9 @@
             "productType":"laptop",
             "productImage" : "../../../../../assets/img/shop/catalog/65.jpg",
             "isSale":false,
-            "price":"200.00",
+            "price":200.00,
             "priceUnit":"$",
-            "ratings":"3",
-            "brandId":"2"
+            "ratings":"3"
         },
         {
             "pid":1,
@@ -378,10 +376,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/73.jpg",
             "isSale":false,
-            "price":"300.00",
+            "price":300.00,
             "priceUnit":"$",
-            "ratings":"4.5",
-            "brandId":"3"
+            "ratings":"4.5"
         },
         {
             "pid":1,
@@ -389,10 +386,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/76.jpg",
             "isSale":false,
-            "price":"150.00",
+            "price":150.00,
             "priceUnit":"$",
-            "ratings":"5",
-            "brandId":"1"
+            "ratings":"5"
         },
         {
             "pid":1,
@@ -400,10 +396,9 @@
             "productType":"laptop",
             "productImage" : "../../../../../assets/img/shop/catalog/65.jpg",
             "isSale":false,
-            "price":"200.00",
+            "price":200.00,
             "priceUnit":"$",
-            "ratings":"3",
-            "brandId":"2"
+            "ratings":"3"
         },
         {
             "pid":1,
@@ -411,10 +406,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/73.jpg",
             "isSale":false,
-            "price":"300.00",
+            "price":300.00,
             "priceUnit":"$",
-            "ratings":"4.5",
-            "brandId":"8"
+            "ratings":"4.5"
         },
         {
             "pid":1,
@@ -422,10 +416,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/76.jpg",
             "isSale":false,
-            "price":"150.00",
+            "price":150.00,
             "priceUnit":"$",
-            "ratings":"5",
-            "brandId":"9"
+            "ratings":"5"
         },
         {
             "pid":1,
@@ -433,10 +426,9 @@
             "productType":"laptop",
             "productImage" : "../../../../../assets/img/shop/catalog/65.jpg",
             "isSale":false,
-            "price":"200.00",
+            "price":200.00,
             "priceUnit":"$",
-            "ratings":"3",
-            "brandId":"6"
+            "ratings":"3"
         },
         {
             "pid":1,
@@ -444,10 +436,9 @@
             "productType":"Monitor",
             "productImage" : "../../../../../assets/img/shop/catalog/73.jpg",
             "isSale":false,
-            "price":"300.00",
+            "price":300.00,
             "priceUnit":"$",
-            "ratings":"4.5",
-            "brandId":"5"
+            "ratings":"4.5"
         }
      
     ],

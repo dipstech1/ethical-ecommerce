@@ -46,7 +46,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
   page = 1;
   itemsPerPage = 5;
-  pageSize: number = 2;
+  pageSize: number = 5;
   categories: any[];
 
   constructor(private productListService: ProductListService, private router: Router) { }
@@ -130,6 +130,12 @@ export class ProductListComponent implements OnInit, OnDestroy {
       this.productList = this.productListResponse.filter(x => rating.includes(x.ratings));
     else
       this.productList = [...this.productListResponse];
+  }
+
+  showSelectedPriceRange(event){
+    console.log('e ', event);
+    this.productList = this.productListResponse.filter(x => x.price >= event.minPrice && x.price <= event.maxPrice );
+
   }
 
   ngOnDestroy(): void {
