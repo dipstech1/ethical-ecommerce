@@ -10,6 +10,9 @@ export class DataService {
   private productData = new BehaviorSubject({});
   productData$ = this.productData.asObservable();
 
+  private cartData = new BehaviorSubject([]);
+  cartData$ = this.cartData.asObservable();
+
   constructor() { }
 
   popupStatus(status: any) {
@@ -18,6 +21,10 @@ export class DataService {
 
   sendProductData(data: any) {
     this.productData.next(data);
+  }
+
+  sendCartData(data: any) {
+    this.cartData.next(data);
   }
 
 }

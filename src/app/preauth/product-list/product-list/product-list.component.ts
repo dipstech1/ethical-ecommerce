@@ -1,8 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProductListService } from 'src/app/core/services/product-list.service';
 import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
-import { Router } from '@angular/router';
+import { takeUntil, switchMap } from 'rxjs/operators';
+import { Router, ActivatedRoute } from '@angular/router';
+import { CartService } from 'src/app/core/services/cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -49,7 +50,15 @@ export class ProductListComponent implements OnInit, OnDestroy {
   pageSize: number = 5;
   categories: any[];
 
-  constructor(private productListService: ProductListService, private router: Router) { }
+  constructor(private productListService: ProductListService, 
+    private router: Router,private route: ActivatedRoute, private cartService : CartService) {
+    this.route.params
+      .pipe(takeUntil(this.ngUnsubscribe))
+      .subscribe(param =>{
+        console.log("param ", param);
+      })
+      
+   }
 
   ngOnInit() {
     this.getProductsData();
@@ -114,7 +123,10 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
 
   goToCart() {
-    this.router.navigate(["add-to-cart"]);
+    // this.router.navigate(["add-to-cart"]);
+    this.cartService.addToCart().subscribe((res => {
+      
+    }))
   }
 
   showSelectedBrand(brand: Array<any>) {

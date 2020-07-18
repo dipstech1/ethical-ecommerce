@@ -29,7 +29,6 @@
  </div> -->
 
 
- <span class="accordion-indicator"></span>
 
  <ngb-accordion #acc="ngbAccordion">
    <ngb-panel [id]="category?.category" [title]="category?.category">
@@ -47,7 +46,7 @@
             class="cz-filter-item-text">View all</span><span
             class="font-size-xs text-muted ml-3">1,953</span></a></li>
       <li class="widget-list-item cz-filter-item" *ngFor="let list of categories"><a
-          class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span
+          class="widget-list-link d-flex justify-content-between align-items-center" [routerLink]="['/product-list/',list.cid]"><span
             class="cz-filter-item-text">{{list.cname}}</span><span
             class="font-size-xs text-muted ml-3">{{list.quantity}}</span></a></li>
     </ul>

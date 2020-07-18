@@ -9,6 +9,10 @@ const routes: Routes = [
     loadChildren:() => import("./preauth/preauth.module").then(m=>m.PreauthModule)
   },
   {
+    path:"product-list/:id",
+    loadChildren:() => import("./preauth/product-list/product-list.module").then(m=>m.ProductListModule)
+  },
+  {
     path:"product-list",
     loadChildren:() => import("./preauth/product-list/product-list.module").then(m=>m.ProductListModule)
   },

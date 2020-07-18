@@ -4,6 +4,7 @@ import { CartService } from 'src/app/core/services/cart.service';
 import { takeUntil } from 'rxjs/operators';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginSignupComponent } from '../../partial-views/login-signup/login-signup.component';
+import { DataService } from 'src/app/core/services/data-sharing.service';
 
 @Component({
   selector: 'app-cart',
@@ -16,11 +17,18 @@ export class CartComponent implements OnInit {
   cartList = [];
   totalPrice = 0;
 
-  constructor(private cartService: CartService,private modalService: NgbModal) { }
+  constructor(private cartService: CartService,private modalService: NgbModal, private dataSharingService : DataService) { }
 
 
   ngOnInit() {
-    this.getCartData();
+    this.dataSharingService.cartData$.subscribe((cart:any) => {
+      this.cartList = [...cart];
+      this.getTotalPrice();
+      if(cart.length == 0){
+        this.getCartData();
+      }
+    })
+    
   }
 
   getCartData(){
