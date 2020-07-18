@@ -15,7 +15,7 @@ export class StarRatingsComponent implements OnInit {
   constructor(private authService : AuthService) { }
 
   ngOnInit() {
-    this.readOnly =  !this.authService.isAuthenticated()
+    this.readOnly =  true;
   }
 
   onRate($event:{oldValue:number, newValue:number, starRating:StarRatingComponent}) {
