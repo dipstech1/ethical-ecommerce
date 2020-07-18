@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CartService } from 'src/app/core/services/cart.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { DataService } from 'src/app/core/services/data-sharing.service';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +15,7 @@ export class CartComponent implements OnInit,OnDestroy {
   cartList = [];
   totalPrice = 0;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, private dataSharingService : DataService) { }
 
   ngOnInit() {
     this.getCartData();
@@ -38,6 +39,7 @@ export class CartComponent implements OnInit,OnDestroy {
 
   removeItem(pid:any){
     this.cartList = this.cartList.filter(x => x.pid != pid);
+    this.dataSharingService.sendCartData(this.cartList);
     this.getTotalPrice();
   }
 
