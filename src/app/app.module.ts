@@ -9,6 +9,7 @@ import {CoreModule} from '../app/core/core.module'
 
 import {PendingChangesGuard} from '../app/core/guards/deactivate.guard'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -18,8 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     SharedModule,
     CoreModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [
     PendingChangesGuard

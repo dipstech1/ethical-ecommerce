@@ -607,6 +607,28 @@
       "color": "Green",
       "price": 66.23,
       "image": "../../../../assets/img/shop/cart/02.jpg"
+    },
+    {
+      "pid": 5,
+      "size": "",
+      "quantity": 1,
+      "productTitle": "Check it",
+      "brand": "Wooden",
+      "color": "Green",
+      "price": 66.23,
+      "image": "../../../../assets/img/shop/cart/02.jpg",
+      "id": 5
+    },
+    {
+      "pid": 5,
+      "size": "",
+      "quantity": 1,
+      "productTitle": "Check it",
+      "brand": "Wooden",
+      "color": "Green",
+      "price": 66.23,
+      "image": "../../../../assets/img/shop/cart/02.jpg",
+      "id": 6
     }
   ],
   "brands": [
