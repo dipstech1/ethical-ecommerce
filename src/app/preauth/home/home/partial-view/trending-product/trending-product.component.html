@@ -6,7 +6,8 @@
     </div>
     <!-- Grid-->
     <div class="row pt-2 mx-n2" *ngIf="trendingProduct.length">
-      
+<!--       
+      products -->
       <!-- Product-->
       <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4"  *ngFor="let product of trendingProduct">
         <div class="card product-card"><span class="badge badge-danger badge-shadow" *ngIf="product.status == 'sale'">Sale</span>
