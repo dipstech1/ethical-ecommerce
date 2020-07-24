@@ -6,8 +6,7 @@
     </div>
     <!-- Grid-->
     <div class="row pt-2 mx-n2" *ngIf="trendingProduct.length">
-<!--       
-      products -->
+
       <!-- Product-->
       <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4"  *ngFor="let product of trendingProduct">
         <div class="card product-card"><span class="badge badge-danger badge-shadow" *ngIf="product.status == 'sale'">Sale</span>
@@ -15,7 +14,7 @@
             <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button>
           </div><a class="card-img-top d-block overflow-hidden" href="shop-single-v2.html"><img src="../../../../../../assets/img/shop/catalog/59.jpg" alt="Product"></a>
           <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">{{product.productType}}</a>
-            <h3 class="product-title font-size-sm"><a href="shop-single-v2.html">{{product.description}}</a></h3>
+            <h3 class="product-title font-size-sm"><a [routerLink]="['/product-details']">{{product.description}}</a></h3>
             <div class="d-flex justify-content-between" *ngIf="product.quantity == 0">
               <div class="product-price"><span class="text-muted font-size-sm">Out of stock</span></div>
             </div>

@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren:() => import("./preauth/product-details/product-details.module").then(m=>m.ProductDetailsModule)
   },
   {
+    path:"product-details",
+    loadChildren:() => import("./preauth/product-details/product-details.module").then(m=>m.ProductDetailsModule)
+  },
+  {
     path:"add-to-cart",
     canActivate: [AuthGuard],
     loadChildren:()=> import("./postauth/postauth.module").then(m=>m.PostauthModule)
