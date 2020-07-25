@@ -8,7 +8,7 @@
                 <div class="widget widget-links">
                   <h6 class="font-size-base mb-3">{{subDept.name}}</h6>
                   <ul class="widget-list">
-                    <li class="widget-list-item pb-1" *ngFor="let item of subDept.widgets"><a class="widget-list-link"  [routerLink]="['/product-list']">{{item.widgetName}}</a></li>
+                    <li class="widget-list-item pb-1" *ngFor="let item of subDept.widgets"><a class="widget-list-link"  [routerLink]="['/product-list',item.id]">{{item.widgetName}}</a></li>
                    
                   </ul>
                 </div>
