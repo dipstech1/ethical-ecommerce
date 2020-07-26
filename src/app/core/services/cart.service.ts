@@ -38,5 +38,20 @@ export class CartService {
         )
 
     }
+
+    public getWishList(){
+        this.http.get(this.url+"/wishList").subscribe(data => {
+          this.ds.sendWishListData(data)
+        })
+      }
+
+    public addToWishList(data){
+        return this.http.post(this.url+"/wishList", data)
+        .pipe(
+          tap(e => this.getWishList())
+      )
+    }
+
+   
     
 }

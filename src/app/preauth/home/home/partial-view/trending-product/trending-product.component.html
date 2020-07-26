@@ -11,7 +11,7 @@
       <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4"  *ngFor="let product of trendingProduct">
         <div class="card product-card"><span class="badge badge-danger badge-shadow" *ngIf="product.status == 'sale'">Sale</span>
           <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style mr-2" href="#"><i class="czi-compare mr-1"></i>Compare</a>
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button>
+          <app-wishlist-button [product] = "product"></app-wishlist-button>
           </div><a class="card-img-top d-block overflow-hidden" [routerLink]="['/product-details',product.id]"><img src="../../../../../../assets/img/shop/catalog/59.jpg" alt="Product"></a>
           <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">{{product.productType}}</a>
             <h3 class="product-title font-size-sm"><a [routerLink]="['/product-details',product.id]">{{product.description}}</a></h3>

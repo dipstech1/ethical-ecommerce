@@ -917,5 +917,29 @@
         }
       ]
     }
+  ],
+  "wishList": [
+    {
+      "pid": 1,
+      "productName": "Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+      "productType": "Monitor",
+      "productImage": "../../../../../assets/img/shop/catalog/76.jpg",
+      "isSale": false,
+      "price": 150,
+      "priceUnit": "$",
+      "ratings": "5",
+      "id": 1
+    },
+    {
+      "pid": 1,
+      "productName": "Ultra-Thin Asus",
+      "productType": "Monitor",
+      "productImage": "../../../../../assets/img/shop/catalog/73.jpg",
+      "isSale": false,
+      "price": 300,
+      "priceUnit": "$",
+      "ratings": "4.5",
+      "id": 2
+    }
   ]
 }
