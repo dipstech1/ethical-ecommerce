@@ -4,9 +4,9 @@
       <div class="col-lg-4 col-md-6 mb-2 py-3" *ngFor="let seller of sellers">
         <div class="widget">
           <h3 class="widget-title">{{seller.name}}</h3>
-          <div class="media align-items-center pb-2 border-bottom" *ngFor="let item of seller.items"><a class="d-block mr-2" href="{{item.url}}"><img width="64" src="{{item.image_url}}" alt="Product"/></a>
+          <div class="media align-items-center pb-2 border-bottom" *ngFor="let item of seller.items"><a class="d-block mr-2"[routerLink]="['/product-details',item.id]"><img width="64" src="{{item.image_url}}" alt="Product"/></a>
             <div class="media-body">
-              <h6 class="widget-product-title"><a href="{{item.url}}">{{item.title}}</a></h6>
+              <h6 class="widget-product-title"><a >{{item.title}}</a></h6>
               <div class="widget-product-meta"><span class="text-accent">${{item.price}}.<small>00</small></span></div>
             </div>
           </div>

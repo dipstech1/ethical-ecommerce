@@ -43,9 +43,9 @@
           <!-- Product-->
           <div class="col-md-4 col-sm-6 px-2 mb-4" *ngFor="let product of productList | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
             <div class="card product-card">
-              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img [src]="product.productImage" alt="Product"></a>
-              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">{{product.productType}}</a>
-                <h3 class="product-title font-size-sm"><a href="shop-single-v1.html"  [routerLink]="['/product-details',product.pid]">{{product.productName}}</a></h3>
+              <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden" [routerLink]="['/product-details',product.pid]"><img [src]="product.productImage" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" >{{product.productType}}</a>
+                <h3 class="product-title font-size-sm"><a >{{product.productName}}</a></h3>
                 <div class="d-flex justify-content-between">
                   <div class="product-price"><span class="text-accent">{{product.price}}</span></div>
                   <app-star-rating [rating] = "product.ratings"></app-star-rating>

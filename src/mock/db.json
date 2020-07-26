@@ -598,15 +598,15 @@
       "image": "../../../../assets/img/shop/cart/04.jpg"
     },
     {
-      "id": 4,
-      "pid": 4,
+      "pid": 5,
       "size": "",
       "quantity": 1,
-      "productTitle": "TH  Backpack",
+      "productTitle": "Check it",
       "brand": "Wooden",
       "color": "Green",
       "price": 66.23,
-      "image": "../../../../assets/img/shop/cart/02.jpg"
+      "image": "../../../../assets/img/shop/cart/02.jpg",
+      "id": 4
     },
     {
       "pid": 5,
@@ -618,17 +618,6 @@
       "price": 66.23,
       "image": "../../../../assets/img/shop/cart/02.jpg",
       "id": 5
-    },
-    {
-      "pid": 5,
-      "size": "",
-      "quantity": 1,
-      "productTitle": "Check it",
-      "brand": "Wooden",
-      "color": "Green",
-      "price": 66.23,
-      "image": "../../../../assets/img/shop/cart/02.jpg",
-      "id": 6
     }
   ],
   "brands": [
@@ -814,13 +803,26 @@
       "totalReview": 74,
       "recommended": 54,
       "averageRating": 4,
-      "five": 43,
+      "five": 55,
       "four": 16,
       "three": 9,
       "two": 4,
       "one": 2
     },
     "usersReviews": [
+      {
+        "userId": 4,
+        "userName": "Test test",
+        "rating": 3,
+        "review": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est",
+        "pros": "Consequuntur magni, voluptatem sequi, tempora",
+        "cons": "Architecto beatae, quis autem",
+        "helpful": 26,
+        "like": 10,
+        "unlike": 88,
+        "profileImg": "../../../../assets/img/shop/reviews/01.jpg",
+        "date": ""
+      },
       {
         "userId": 4,
         "userName": "Rafael Marquez",

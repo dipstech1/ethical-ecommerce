@@ -127,6 +127,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
     this.cartService.addToCart().subscribe((res => {
       
     }))
+    // this.router.navigate(["add-to-cart"]);
   }
 
   showSelectedBrand(brand: Array<any>) {
