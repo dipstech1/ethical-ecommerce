@@ -379,7 +379,8 @@
       "isSale": false,
       "price": 150,
       "priceUnit": "$",
-      "ratings": "5"
+      "ratings": "5",
+      "brandId" : 1
     },
     {
       "pid": 1,
@@ -389,7 +390,8 @@
       "isSale": false,
       "price": 200,
       "priceUnit": "$",
-      "ratings": "3"
+      "ratings": "3",
+      "brandId" : "1"
     },
     {
       "pid": 1,
@@ -399,7 +401,8 @@
       "isSale": false,
       "price": 300,
       "priceUnit": "$",
-      "ratings": "4.5"
+      "ratings": "4.5",
+      "brandId" : "2"
     },
     {
       "pid": 1,
@@ -409,7 +412,8 @@
       "isSale": false,
       "price": 150,
       "priceUnit": "$",
-      "ratings": "5"
+      "ratings": "5",
+      "brandId" : "3"
     },
     {
       "pid": 1,
@@ -419,7 +423,8 @@
       "isSale": false,
       "price": 200,
       "priceUnit": "$",
-      "ratings": "3"
+      "ratings": "3",
+      "brandId" : "4"
     },
     {
       "pid": 1,
@@ -429,7 +434,8 @@
       "isSale": false,
       "price": 300,
       "priceUnit": "$",
-      "ratings": "4.5"
+      "ratings": "4.5",
+      "brandId" : "5"
     },
     {
       "pid": 1,
@@ -439,7 +445,8 @@
       "isSale": false,
       "price": 150,
       "priceUnit": "$",
-      "ratings": "5"
+      "ratings": "5",
+      "brandId" : "6"
     },
     {
       "pid": 1,
@@ -449,7 +456,8 @@
       "isSale": false,
       "price": 200,
       "priceUnit": "$",
-      "ratings": "3"
+      "ratings": "3",
+      "brandId" : "7"
     },
     {
       "pid": 1,
@@ -459,7 +467,8 @@
       "isSale": false,
       "price": 300,
       "priceUnit": "$",
-      "ratings": "4.5"
+      "ratings": "4.5",
+      "brandId" : "3"
     }
   ],
   "sellers": [
@@ -949,6 +958,39 @@
       "priceUnit": "$",
       "ratings": "4.5",
       "id": 2
+    },
+    {
+      "pid": 1,
+      "productName": "Ultra-Thin Edge to Edge LED Backlit Computer Monitor",
+      "productType": "Monitor",
+      "productImage": "../../../../../assets/img/shop/catalog/76.jpg",
+      "isSale": false,
+      "price": 150,
+      "priceUnit": "$",
+      "ratings": "5",
+      "id": 3
+    },
+    {
+      "pid": 1,
+      "productName": "Ultra-Thin laptop",
+      "productType": "laptop",
+      "productImage": "../../../../../assets/img/shop/catalog/65.jpg",
+      "isSale": false,
+      "price": 200,
+      "priceUnit": "$",
+      "ratings": "3",
+      "id": 4
+    },
+    {
+      "pid": 1,
+      "productName": "Ultra-Thin Asus",
+      "productType": "Monitor",
+      "productImage": "../../../../../assets/img/shop/catalog/73.jpg",
+      "isSale": false,
+      "price": 300,
+      "priceUnit": "$",
+      "ratings": "4.5",
+      "id": 5
     }
   ]
 }
