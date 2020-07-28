@@ -709,13 +709,22 @@
         "myProduct": true,
         "price": 124.5
       },
-      "linkedProduct": {
-        "productImage": "../../../../../../assets/img/shop/catalog/72.jpg",
-        "discount": "-20%",
-        "title": "Smartwatch Wireless Charger",
-        "newPrice": 16,
-        "oldPrice": 20
-      },
+      "linkedProduct": [
+        {
+          "productImage": "../../../../../../assets/img/shop/catalog/72.jpg",
+          "discount": "-20%",
+          "title": "Smartwatch Wireless Charger",
+          "newPrice": 16,
+          "oldPrice": 20
+        },
+        {
+          "productImage": "../../../../../../assets/img/shop/catalog/72.jpg",
+          "discount": "-10%",
+          "title": "Smartwatch  Charger",
+          "newPrice": 16,
+          "oldPrice": 20
+        }
+      ],
       "total": 140.99
     }
   ],
