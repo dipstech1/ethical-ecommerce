@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/core/services/cart.service';
 
 @Component({
   selector: 'app-generalinfo-tab',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralinfoTabComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   ngOnInit() {
+  }
+
+  goToCart(){
+    this.cartService.addToCart().subscribe((res => {
+      
+    }))
   }
 
 }
