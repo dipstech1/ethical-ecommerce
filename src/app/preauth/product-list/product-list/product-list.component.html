@@ -53,9 +53,8 @@
                 </div>
               </div>
               <div class="card-body card-body-hidden">
-               
+                <app-cart-management [showCartOnly] = 'true'></app-cart-management>
                 <button class="btn btn-primary btn-sm btn-block mb-2" (click)="goToCart()" type="button" data-toggle="toast" data-target="#cart-toast"><i class="czi-cart font-size-sm mr-1"></i>Buy Now</button>
-                
               </div>
             </div>
             <hr class="d-sm-none">

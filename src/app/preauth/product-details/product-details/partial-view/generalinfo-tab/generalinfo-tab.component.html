@@ -69,21 +69,10 @@
         </div>
         <div class="product-badge product-available mt-n1"><i class="czi-security-check"></i>Product available</div>
       </div>
-      <div class="d-flex align-items-center pt-2 pb-4">
-        <select class="custom-select mr-3" style="width: 5rem;">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button class="btn btn-primary btn-shadow btn-block" (click)="goToCart()" type="button"><i
-            class="czi-cart font-size-lg mr-2"></i>Add
-          to Cart</button>
-      </div>
+     <app-cart-management></app-cart-management>
 
       <!-- Product panels-->
-      <div class="accordion mb-4" id="productPanels">
+      <div class="accordion mb-4" style="margin-top: 18px;" id="productPanels">
         <div class="card">
           <div class="card-header">
             <h3 class="accordion-heading"><a href="#shippingOptions" role="button" data-toggle="collapse"
