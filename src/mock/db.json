@@ -583,6 +583,17 @@
       "color": "Green",
       "price": 66.23,
       "image": "../../../../assets/img/shop/cart/02.jpg"
+    },
+    {
+      "pid": 5,
+      "size": "",
+      "quantity": 1,
+      "productTitle": "Check it",
+      "brand": "Wooden",
+      "color": "Green",
+      "price": 66.23,
+      "image": "../../../../assets/img/shop/cart/02.jpg",
+      "id": 2
     }
   ],
   "brands": [
@@ -679,13 +690,6 @@
           "productImage": "../../../../../../assets/img/shop/catalog/72.jpg",
           "discount": "-20%",
           "title": "Smartwatch Wireless Charger",
-          "newPrice": 16,
-          "oldPrice": 20
-        },
-        {
-          "productImage": "../../../../../../assets/img/shop/catalog/72.jpg",
-          "discount": "-10%",
-          "title": "Smartwatch  Charger",
           "newPrice": 16,
           "oldPrice": 20
         }
