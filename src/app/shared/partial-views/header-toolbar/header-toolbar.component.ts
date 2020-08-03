@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginSignupComponent } from '../login-signup/login-signup.component';
+import { AuthService } from 'src/app/core/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-toolbar',
@@ -10,11 +12,12 @@ import { LoginSignupComponent } from '../login-signup/login-signup.component';
 export class HeaderToolbarComponent implements OnInit {
 
   modalOpen = false;
+  isLoggedIn : boolean
 
-
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private auth : AuthService, private router :Router) { }
 
   ngOnInit() {
+    this.isLoggedIn = this.auth.isAuthenticated()
   }
 
   onClick() {
@@ -22,5 +25,8 @@ export class HeaderToolbarComponent implements OnInit {
   }
   login() {
     this.modalService.open(LoginSignupComponent);
+  }
+  profile(){
+    this.router.navigate(['/profile']);
   }
 }

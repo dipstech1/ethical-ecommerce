@@ -28,6 +28,11 @@ const routes: Routes = [
     path:"add-to-cart",
     canActivate: [AuthGuard],
     loadChildren:()=> import("./postauth/postauth.module").then(m=>m.PostauthModule)
+  },
+  {
+    path:"profile",
+    canActivate: [AuthGuard],
+    loadChildren:()=> import('./postauth/profile/profile.module').then(m=>m.ProfileModule)
   }
 ];
 
