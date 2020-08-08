@@ -13,6 +13,9 @@ export class DataService {
   private cartData = new BehaviorSubject([]);
   cartData$ = this.cartData.asObservable();
 
+  private wishData = new BehaviorSubject([]);
+  wishData$ = this.wishData.asObservable();
+
   constructor() { }
 
   popupStatus(status: any) {
@@ -25,6 +28,10 @@ export class DataService {
 
   sendCartData(data: any) {
     this.cartData.next(data);
+  }
+
+  sendWishListData(data: any) {
+    this.wishData.next(data);
   }
 
 }

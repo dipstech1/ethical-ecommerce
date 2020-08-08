@@ -17,11 +17,13 @@
                 <div class="display-4 font-weight-light text-muted px-4">+</div>
               </div>
               <div class="col-md-3 col-sm-5">
-                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;"><a class="card-img-top d-block overflow-hidden" href="#"><img [src]="combo?.linkedProduct?.productImage" alt="Product"></a>
-                  <div class="card-body py-2"><span class="d-inline-block bg-danger font-size-ms text-white rounded-sm py-1 px-2 mb-3">{{combo?.linkedProduct?.discount}}</span>
-                    <h3 class="product-title font-size-sm"><a href="#">{{combo?.linkedProduct?.title}}</a></h3>
-                    <div class="product-price"><span class="text-accent">${{combo?.linkedProduct?.newPrice}}</span>
-                      <del class="font-size-sm text-muted">${{combo?.linkedProduct?.oldPrice}}</del>
+                <div class="card product-card card-static text-center mx-auto" style="max-width: 20rem;" *ngFor="let lnkd of combo?.linkedProduct">
+                  <a class="card-img-top d-block overflow-hidden">
+                  <img [src]="lnkd?.productImage" alt="Product"></a>
+                  <div class="card-body py-2"><span class="d-inline-block bg-danger font-size-ms text-white rounded-sm py-1 px-2 mb-3">{{lnkd?.discount}}</span>
+                    <h3 class="product-title font-size-sm"><a href="#">{{lnkd?.title}}</a></h3>
+                    <div class="product-price"><span class="text-accent">${{lnkd?.newPrice}}</span>
+                      <del class="font-size-sm text-muted">${{lnkd?.oldPrice}}</del>
                     </div>
                   </div>
                 </div>

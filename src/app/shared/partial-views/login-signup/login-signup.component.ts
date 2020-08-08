@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-signup',
@@ -14,7 +15,7 @@ export class LoginSignupComponent implements OnInit {
   submitted = false;
   loginSubmitted = false;
 
-  constructor(private formBuilder: FormBuilder, public activeModal: NgbActiveModal)
+  constructor(private formBuilder: FormBuilder, public activeModal: NgbActiveModal,private router: Router,)
     {}    
 
   ngOnInit() {
@@ -50,10 +51,14 @@ export class LoginSignupComponent implements OnInit {
     }
 }
 onLogin(){
-  this.loginSubmitted = true;
-  if (this.loginForm.invalid) {
-    return;
-  }
+  // this.loginSubmitted = true;
+  // if (this.loginForm.invalid) {
+  //   return;
+  // }
+
+  localStorage.setItem('token', '123');
+  this.closeModal();
+  this.router.navigate(["add-to-cart"]);
 }
 }
 

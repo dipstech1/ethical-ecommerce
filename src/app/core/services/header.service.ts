@@ -16,4 +16,6 @@ export class HeaderService {
     public getSearchResult(searchResult){
        return this.http.get("http://www.omdbapi.com/?apikey=c8a68242&s=" + event)
     }
+
+     
 }

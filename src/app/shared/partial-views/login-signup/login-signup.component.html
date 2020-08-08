@@ -7,7 +7,7 @@
   <button (click)="activeModal.dismiss('Close clicked')" class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 </div>
 <div class="modal-body tab-content py-4">
-  <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+  <form [formGroup]="loginForm" class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
     <div class="form-group">
       <label for="si-email">Email address</label>
       <input class="form-control" type="email" formControlName="emails"  id="si-email" placeholder="johndoe@example.com" required>
@@ -35,7 +35,7 @@
         <label class="custom-control-label" for="si-remember">Remember me</label>
       </div><a class="font-size-sm" href="#">Forgot password?</a>
     </div>
-    <button class="btn btn-primary btn-block btn-shadow"  type="submit">Sign in</button>
+    <button class="btn btn-primary btn-block btn-shadow"  type="submit" (click)="onLogin()">Sign in</button>
   </form>
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
     <div class="form-group">

@@ -26,10 +26,11 @@ import { RatingModule } from 'ng-starrating';
 import { ModalComponent } from './components/modal/modal.component';
 import { LoginSignupComponent } from './partial-views/login-signup/login-signup.component';
 import { NgbModule,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { WishlistButtonComponent } from './components/wishlist-button/wishlist-button.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent, ],
+  declarations: [LoaderComponent, ConfirmPopupComponent, HeaderComponent, DepartmentsMenuComponent, HeaderSearchComponent, HeaderToolbarComponent, CartComponent, HeaderPrimaryMenuComponent, HeaderTopbarComponent, FooterComponent, FooterSitemapComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent, WishlistButtonComponent, ],
   entryComponents: [ConfirmPopupComponent, ModalComponent, LoginSignupComponent],
   imports: [
     CommonModule,
@@ -43,6 +44,7 @@ import { NgbModule,NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   providers:[NgbActiveModal],
   exports: [LoaderComponent, ConfirmPopupComponent, ReactiveFormsModule, FormsModule, HeaderComponent,
     // tslint:disable-next-line: max-line-length
-    FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent,NgbModule]
+    FooterComponent, WidgetsComponent, BreadcrumbComponent, CartManagementComponent, StarRatingsComponent, ModalComponent, LoginSignupComponent,NgbModule,
+    WishlistButtonComponent]
 })
 export class SharedModule { }

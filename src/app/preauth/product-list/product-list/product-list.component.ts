@@ -131,8 +131,9 @@ export class ProductListComponent implements OnInit, OnDestroy {
   }
 
   showSelectedBrand(brand: Array<any>) {
+    console.log(this.productListResponse, brand)
     if (brand.length > 0)
-      this.productList = this.productListResponse.filter(x => brand.includes(x.brandId));
+      this.productList = this.productListResponse.filter(x => brand.includes(x.brandId)); 
     else
       this.productList = [...this.productListResponse];
   }

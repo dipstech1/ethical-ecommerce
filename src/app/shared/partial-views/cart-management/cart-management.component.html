@@ -1,4 +1,5 @@
-<div class="d-flex align-items-center pt-3">
+<ng-container *ngIf="!showCartOnly">
+  <div class="d-flex align-items-center pt-3">
     <select class="custom-select mr-2" style="width: 5rem;">
       <option value="1">1</option>
       <option value="2">2</option>
@@ -7,10 +8,17 @@
       <option value="5">5</option>
     </select>
     <button class="btn btn-primary btn-shadow mr-2" type="button"><i class="czi-cart font-size-lg mr-sm-2"></i><span class="d-none d-sm-inline" (click) = "addToCart()">Add to Cart</span></button>
+    <button class="btn btn-primary btn-shadow mr-2" (click)="goToCart()" type="button" data-toggle="toast" data-target="#cart-toast"><i class="czi-cart font-size-sm mr-1"></i>Buy Now</button>
+
     <div class="mr-2">
       <button class="btn btn-secondary btn-icon" type="button" data-toggle="tooltip" title="Add to Wishlist"><i class="czi-heart font-size-lg"></i></button>
     </div>
-    <div>
+    <!-- <div>
       <button class="btn btn-secondary btn-icon" type="button" data-toggle="tooltip" title="Compare"><i class="czi-compare font-size-lg"></i></button>
-    </div>
+    </div> -->
   </div>
+</ng-container>
+
+<ng-container *ngIf="showCartOnly">
+  <button  (click) = "addToCart()" class="btn btn-primary btn-sm btn-block mb-2" type="button"><i class="czi-cart font-size-lg mr-sm-2"></i><span class="d-none d-sm-inline">Add to Cart</span></button>
+</ng-container>

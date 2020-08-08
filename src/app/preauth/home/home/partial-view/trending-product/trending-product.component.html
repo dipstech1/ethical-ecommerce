@@ -2,7 +2,7 @@
     <!-- Heading-->
     <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-4 mb-4">
       <h2 class="h3 mb-0 pt-3 mr-2">Trending products</h2>
-      <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="shop-grid-ls.html">More products<i class="czi-arrow-right ml-1 mr-n1"></i></a></div>
+      <div class="pt-3"><a class="btn btn-outline-accent btn-sm" [routerLink]="['/product-list',204]">More products<i class="czi-arrow-right ml-1 mr-n1"></i></a></div>
     </div>
     <!-- Grid-->
     <div class="row pt-2 mx-n2" *ngIf="trendingProduct.length">
@@ -11,7 +11,7 @@
       <div class="col-lg-3 col-md-4 col-sm-6 px-2 mb-4"  *ngFor="let product of trendingProduct">
         <div class="card product-card"><span class="badge badge-danger badge-shadow" *ngIf="product.status == 'sale'">Sale</span>
           <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style mr-2" href="#"><i class="czi-compare mr-1"></i>Compare</a>
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i class="czi-heart"></i></button>
+          <app-wishlist-button [product] = "product"></app-wishlist-button>
           </div><a class="card-img-top d-block overflow-hidden" [routerLink]="['/product-details',product.id]"><img src="../../../../../../assets/img/shop/catalog/59.jpg" alt="Product"></a>
           <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">{{product.productType}}</a>
             <h3 class="product-title font-size-sm"><a [routerLink]="['/product-details',product.id]">{{product.description}}</a></h3>
@@ -27,7 +27,8 @@
             </div>
           </div>
           <div class="card-body card-body-hidden">
-            <button class="btn btn-primary btn-sm btn-block mb-2" type="button" data-toggle="toast" data-target="#cart-toast"><i class="czi-cart font-size-sm mr-1"></i>Add to Cart</button>
+            <app-cart-management [showCartOnly] = 'true'></app-cart-management>
+            <button class="btn btn-primary btn-sm btn-block mb-2" type="button" data-toggle="toast" data-target="#cart-toast"><i class="czi-cart font-size-sm mr-1"></i>Buy Now</button>
             <div class="text-center"><a class="nav-link-style font-size-ms" (click)="quickView()"><i class="czi-eye align-middle mr-1"></i>Quick view</a></div>
           </div>
         </div>
