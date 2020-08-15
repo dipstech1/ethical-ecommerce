@@ -23,18 +23,18 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.service.getTrendingProducts()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
-        this.trendingProduct = [...res]
+        this.trendingProduct = [...res.trendingProducts];
       });
     this.service.getSellers()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((result: any) => {
-        this.sellers = [...result];
+        this.sellers = [...result.sellers];
         console.log(this.sellers);
       });
     this.service.getPromoBanners()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((result: any) => {
-        this.promoBanners = {...result};
+        this.promoBanners = {...result.promobanners};
       });
   }
 

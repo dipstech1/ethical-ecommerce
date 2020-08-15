@@ -9,11 +9,13 @@ import { HeaderService } from 'src/app/core/services/header.service';
 export class HeaderComponent implements OnInit {
 
   departmentMenu : any;
-  constructor(private headerService:HeaderService) { }
+  constructor(private headerService: HeaderService) { }
 
   ngOnInit() {
-    this.headerService.getHeaderDepartments().subscribe((res:any) => {
-       this.departmentMenu = [...res];
+    this.headerService.getHeaderDepartments().subscribe((res: any) => {
+     
+      this.departmentMenu = [...res.departments]; // [...res];
+      console.log('res' + this.departmentMenu);
     })
   }
 

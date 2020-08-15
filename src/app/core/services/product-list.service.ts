@@ -1,39 +1,40 @@
 import { Injectable } from "@angular/core";
 import {HttpClient} from '@angular/common/http'
+import { environment } from '../../../environments/environment';
 
 
 @Injectable({providedIn : 'root'})
 
 export class ProductListService {
 
-    url = "http://localhost:3000"
-    constructor(private http:HttpClient){}
+    url = environment.api_url 
+    constructor(private http: HttpClient){}
 
     public getProductLists(){
-        return this.http.get(this.url+"/productList");
+        return this.http.get(this.url+"/productlist");
     }
 
     public getProductCategories(){
-        return this.http.get(this.url + "/productCategories");
+        return this.http.get(this.url + "/productlist");
     }
 
     public getBrands(){
-        return this.http.get(this.url+"/brands");
+        return this.http.get(this.url+"/productlist");
     }
 
     public getProductSuggestion(){
-        return this.http.get(this.url+"/productSuggestion");
+        return this.http.get(this.url+"/productlist");
     }
 
     public getComboProductSuggestion(){
-        return this.http.get(this.url+"/cheapercombo");
+        return this.http.get(this.url+"/productlist");
     }
 
     public getTechSpecs(id:any){
-        return this.http.get(this.url+"/specs");
+        return this.http.get(this.url+"/productlist");
     }   
 
     public getReviews(id:any){
-        return this.http.get(this.url+"/reviews");
+        return this.http.get(this.url+"/productlist");
     }   
 }

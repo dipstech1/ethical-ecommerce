@@ -7,16 +7,16 @@ import { environment } from '../../../environments/environment';
 
 export class HomeService {
 
-    url = environment.api_url; // "http://localhost:3000"
+    url = environment.api_url ;//+'/home'
     constructor(private http: HttpClient){}
 
     public getTrendingProducts(){
-        return this.http.get(this.url+"/trending_products");
+        return this.http.get(this.url +'/home');
     }
     public getSellers(){
-        return this.http.get(this.url+"/sellers");
+        return this.http.get(this.url+ "/home");
     }
     public getPromoBanners(){
-        return this.http.get(this.url+"/promobanners");
+        return this.http.get(this.url +"/home");
     }
 }

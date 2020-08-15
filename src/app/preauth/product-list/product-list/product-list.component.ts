@@ -68,14 +68,14 @@ export class ProductListComponent implements OnInit, OnDestroy {
     this.productListService.getProductLists()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
-        this.productList = [...res];
+        this.productList = [...res.productList];
         this.productListResponse = [...res];
       });
 
     this.productListService.getBrands()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
-        this.brands = [...res];
+        this.brands = [...res.brands];
         this.brands = this.brands.map((b: any) => {
           return { ...b, isChecked: false }
         })
@@ -84,7 +84,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
       this.productListService.getProductCategories()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
-        this.categories = [...res];        
+        this.categories = [...res.productCategories];        
       });
 
   }

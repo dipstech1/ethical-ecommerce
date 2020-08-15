@@ -1,16 +1,17 @@
 import { Injectable } from "@angular/core";
-import {HttpClient} from '@angular/common/http'
+import {HttpClient} from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 
 @Injectable({providedIn : 'root'})
 
 export class HeaderService {
 
-    url = "http://localhost:3000"
+    url =  environment.api_url ;//+'/department';
     constructor(private http:HttpClient){}
 
     public getHeaderDepartments(){
-        return this.http.get(this.url+"/departments");
+        return this.http.get(this.url+"/department");
     }
 
     public getSearchResult(searchResult){
