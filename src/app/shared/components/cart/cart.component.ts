@@ -35,8 +35,12 @@ export class CartComponent implements OnInit {
     this.cartService.getCartProducts()
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((res: any) => {
-        this.cartList = [...res];
-        this.getTotalPrice();
+        console.log("cart ", res)
+        if(res['cart']){
+          this.cartList = [...res.cart];
+          this.getTotalPrice();
+        }
+        
       })
   }
 
